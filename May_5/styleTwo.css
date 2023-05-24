@@ -1,0 +1,13 @@
+.parentContainer {
+  border: 1px solid black;
+  width: 677px;
+  height: 200px;
+  padding: 20px;
+}
+
+.childElement {
+  border: 1px solid red;
+  padding: 55px;
+  height: 100px;
+  width: 400px;
+}

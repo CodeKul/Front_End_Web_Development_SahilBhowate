@@ -1,0 +1,33 @@
+.divStyle {
+  position: static;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+}
+
+.divStyleTwo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+}
+
+.divStyleThree {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.containerStyle {
+  width: 700px;
+  height: 190px;
+  border: 1px solid black;
+  position: relative;
+}

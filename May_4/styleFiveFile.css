@@ -1,0 +1,17 @@
+.styleThree {
+  font-size: xx-small;
+  font-style: oblique;
+  color: blue;
+}
+
+.styleTwo {
+  font-size: smaller;
+  font-style: normal;
+  color: blueviolet;
+}
+
+.styleOne {
+  font-size: x-large;
+  font-style: italic;
+  color: red;
+}

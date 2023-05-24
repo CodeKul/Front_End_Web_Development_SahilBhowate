@@ -1,0 +1,38 @@
+.mainParentContainer {
+  background-color: #c4ebf9;
+  width: 700px;
+  height: 700px;
+  border: 1px solid black;
+}
+
+.headerStyle {
+  width: 698px;
+  height: 70px;
+  border: 1px solid black;
+  background-color: #02bfb1;
+  text-align: center;
+  font-size: larger;
+}
+
+.headerSpanStyle {
+  color: white;
+  border: 1px solid black;
+}
+
+.asideStyle {
+  border: 1px solid black;
+  background-color: #6edb6e;
+  width: 186px;
+  height: 556px;
+}
+
+.articleStyle {
+  border: 1px solid black;
+  background-color: #fbb04c;
+  width: 514px;
+  height: 556px;
+}
+
+.contentStyle {
+  display: flex;
+}

@@ -1,0 +1,136 @@
+.squareParentStyleOne {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-radius: 20px;
+}
+
+.squareParentStyleTwo {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 288px;
+  border-radius: 20px;
+}
+
+.squareParentStyleThree {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 581px;
+  border-radius: 20px;
+}
+
+.squareParentStyleFour {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 272px;
+  left: 0;
+  border-radius: 20px;
+}
+
+.squareParentStyleFive {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 272px;
+  left: 287px;
+  border-radius: 20px;
+}
+
+.squareParentStyleSix {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 272px;
+  left: 580px;
+  border-radius: 20px;
+}
+
+.workChildDivStyle {
+  border: 1px solid black;
+  position: absolute;
+  top: 63px;
+  left: 44px;
+}
+
+.dotStyle {
+  margin-left: 121px;
+}
+
+.hoursDivStyle {
+  font-size: 40px;
+  position: absolute;
+  top: 108px;
+  left: 43px;
+  border: 1px solid black;
+}
+
+.lastWeekDivStyle {
+  position: absolute;
+  border: 1px solid black;
+  top: 175px;
+  left: 43px;
+}
+
+.rightChildContainer {
+  border: 1px solid black;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 292px;
+}
+
+.leftChildContainer {
+  border: 1px solid black;
+  height: 526px;
+  width: 256px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.parentContainer {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.reportStyle {
+  border: 1px solid black;
+  height: 75%;
+  background-color: #5746ea;
+  border-radius: 20px;
+}
+
+.timeSlotStyle {
+  border: 1px solid black;
+  height: 25%;
+  background-color: #1d204b;
+  border-radius: 20px 20px;
+}
+
+.parentStyle {
+  border: 1px solid black;
+  width: 251px;
+  height: 212px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* .workParentDivStyle {
+  border: 1px solid black;
+} */

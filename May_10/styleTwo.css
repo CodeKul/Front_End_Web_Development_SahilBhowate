@@ -1,0 +1,16 @@
+.containerStyle {
+  border: 1px solid red;
+  width: 811px;
+  height: 278px;
+  position: relative;
+}
+
+.navbarStyle {
+  border: 1px solid black;
+  width: 811px;
+  height: 100px;
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}

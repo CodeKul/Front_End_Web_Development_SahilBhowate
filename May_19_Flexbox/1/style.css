@@ -1,0 +1,12 @@
+.parentContainer {
+  border: 1px solid black;
+  width: 921px;
+  height: 500px;
+  display: flex;
+}
+
+.childStyle {
+  border: 1px solid black;
+  width: 95px;
+  height: 95px;
+}

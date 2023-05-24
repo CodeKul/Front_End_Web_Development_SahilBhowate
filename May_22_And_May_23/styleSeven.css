@@ -1,0 +1,13 @@
+.flexContainer {
+  display: flex;
+  border: 1px solid black;
+  height: 100px;
+  width: 1000px;
+}
+
+.flexItem {
+  height: 100px;
+  /* width: 100px; */
+  border: 1px solid red;
+  flex-basis: auto;
+}

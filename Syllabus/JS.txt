@@ -1,0 +1,36 @@
+What JavaScript is?
+First JavaScript script.
+Comments
+Internal JS
+External JS File
+Data types
+Variables
+Variable Hoisting
+variable scopes
+Dialogue  boxes
+Operators
+Conditionals
+Loop
+Functions
+Math
+Strings
+Array
+Object
+OOPS
+Closures
+Prototypes
+Events
+DOM
+Date
+setInterval, SetTimeout
+BOM(Browser Object Model)
+Cookies
+Offline Storage
+Callback , Promise
+ECMASCRIPT - 6
+Error Handling
+Validations
+REGEX
+Debugging
+AJAX
+

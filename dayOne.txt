@@ -1,0 +1,21 @@
+client-server architecture
+
+facebook login page
+
+username : sahil123
+password : **********
+
+Login Button
+
+Database ----> Tables ----> 
+
+1) Sending request to the server for getting the account's information.
+  ---[this is donw using javascript programming language].
+
+2) Interpreting and manipulating the data and displaying it in the decorative form on the web page in the browser.
+  ---[this is done using html , css and javascript].
+
+3) Making the web page interactive using javascript.    
+
+What are tags ?
+They are the symbols between which you write your text content and it is displayed on the web page.

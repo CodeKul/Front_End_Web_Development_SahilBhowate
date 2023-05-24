@@ -1,0 +1,70 @@
+.parentContainerStyle {
+  width: 1080px;
+  height: 550px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.childOneStyle {
+  width: 251.75px;
+  height: 505.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 1px;
+}
+
+.childTwoStyle {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0px;
+  left: 254px;
+}
+
+.childThreeStyle {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0px;
+  left: 507px;
+}
+
+.childFourStyle {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0px;
+  left: 760px;
+}
+
+.childFiveStyle {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 254px;
+  left: 760px;
+}
+
+.childSixStyle {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 254px;
+  left: 507px;
+}
+
+.childSevenStyle {
+  width: 251.75px;
+  height: 251.75px;
+  border: 1px solid black;
+  position: absolute;
+  top: 254px;
+  left: 254px;
+}

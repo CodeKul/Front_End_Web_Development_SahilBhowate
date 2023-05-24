@@ -1,0 +1,19 @@
+.flexContainer {
+  width: 516px;
+  height: 409px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.divStyle {
+  width: 130px;
+  height: 130px;
+  border: 1px solid pink;
+}
+
+.imgStyle {
+  width: 130px;
+  height: 130px;
+}

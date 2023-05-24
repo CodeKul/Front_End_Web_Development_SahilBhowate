@@ -1,0 +1,15 @@
+/* In the below css code ;  */
+/* 'color' is the name of css property */
+/* 'tomato' is the value of that css property */
+
+.divStyle {
+  color: tomato;
+  font-size: xx-large;
+  border: 1px solid black;
+}
+
+.spanStyle {
+  color: aqua;
+  font-size: xx-large;
+  border: 1px solid black;
+}

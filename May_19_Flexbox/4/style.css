@@ -1,0 +1,15 @@
+.childStyle {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+}
+
+.flexContainerStyle {
+  border: 1px solid black;
+  display: flex;
+  width: 700px;
+  height: 500px;
+  align-items: center;
+  /* align-items: start; */
+  /* align-items: end; */
+}

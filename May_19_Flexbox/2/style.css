@@ -1,0 +1,89 @@
+.flexContainerStyleOne {
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexContainerStyleTwo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.flexContainerStyleThree {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.flexContainerStyleFour {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.flexContainerStyleFive {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.flexContainerStyleSix {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.flexContainerStyleSeven {
+  border: 1px solid red;
+  display: flex;
+  justify-content: stretch;
+  margin-top: 30px;
+}
+
+.childStyleOne {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.childStyleTwo {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.childStyleThree {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.childStyleFour {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.childStyleFive {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.childStyleSix {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.childStyleSeven {
+  height: 30rem;
+  width: 30rem;
+  border: 1px solid black;
+}

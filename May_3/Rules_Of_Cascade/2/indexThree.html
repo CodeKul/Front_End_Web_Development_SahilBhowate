@@ -1,0 +1,33 @@
+<!-- When the given html tag is applied the same style through internal css and inline css ;  then at that time which css style should be given the priority ? -->
+<!-- --When there are same css properties written in inline css and internal css ; then at that time the inline css properties would be given the highest priority.  -->
+
+<html>
+  <head>
+    <title>Index Two Web Page Title</title>
+    <style>
+      #titleId {
+        font-size: x-large;
+        color: green;
+      }
+
+      /* #titleId {
+        font-size: x-large;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- <h1 style="font-size: small" id="titleId">Dosa Shop</h1> -->
+      <h1 style="font-size: small; color: yellow" id="titleId">Dosa Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="/Masala Dosa">Masala Dosa</a></li>
+          <li><a href="/Paper Dosa">Paper Dosa</a></li>
+          <li><a href="/Cut Dosa">Cut Dosa</a></li>
+          <li><a href="/Loni Sponge">Loni Sponge</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.pageTitleStyle {
+  font-size: large;
+  color: brown;
+}
+
+#titleId {
+  font-size: x-large;
+  color: aqua;
+}
+
+h1 {
+  font-size: small;
+  color: red;
+}

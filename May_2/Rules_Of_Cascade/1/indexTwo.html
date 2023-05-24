@@ -1,0 +1,49 @@
+<!-- How to write internal CSS ? -->
+<!-- What are selectors in CSS ? -->
+<!-- Basically there are 3 types of selectors -->
+<!-- :-- tag selector , id selector , class selector -->
+
+<!-- One div tag has been applied internal css style. That div tag was targeted using
+id selector , and also using tag selector. So which style would be given priority ? -- [tag selector or id selector ?] --- answer is id selector -->
+
+<!-- One div tag has been applied internal css style. That div tag was targeted using
+class selector , and also using tag selector. So which style would be given priority ? -- [tag selector or class selector ?] --- answer is class selector -->
+
+<html>
+  <head>
+    <title>Web Page Title.</title>
+
+    <style>
+      p {
+        color: maroon;
+      }
+
+      #divStyle {
+        color: aqua;
+      }
+
+      .divStyleTwo {
+        color: blueviolet;
+      }
+
+      div {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>This is a paragraph tag content.</p>
+    <p>This is a paragraph tag content.</p>
+    <p>This is a paragraph tag content.</p>
+    <p>This is a paragraph tag content.</p>
+    <p>This is a paragraph tag content.</p>
+    <p>This is a paragraph tag content.</p>
+    <p>This is a paragraph tag content.</p>
+    <p>This is a paragraph tag content.</p>
+
+    <div id="divStyle">This is first div tag content.</div>
+    <div class="divStyleTwo">This is second div tag content.</div>
+    <div class="divStyleTwo">This is third div tag content.</div>
+  </body>
+</html>

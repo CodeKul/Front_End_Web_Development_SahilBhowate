@@ -1,0 +1,89 @@
+.flexContainerOne {
+  border: 1px solid black;
+  width: 1300px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.flexContainerTwo {
+  border: 1px solid black;
+  width: 1300px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.flexContainerThree {
+  border: 1px solid black;
+  width: 1300px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexContainerFour {
+  border: 1px solid black;
+  width: 1300px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexContainerFive {
+  border: 1px solid black;
+  width: 1300px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flexContainerSix {
+  border: 1px solid black;
+  width: 1300px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexItemOne {
+  height: 200px;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.flexItemTwo {
+  height: 200px;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.flexItemThree {
+  height: 200px;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.flexItemFour {
+  height: 200px;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.flexItemFive {
+  height: 200px;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.flexItemSix {
+  height: 200px;
+  border: 1px solid red;
+  width: 200px;
+}
