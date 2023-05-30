@@ -1,5 +1,4 @@
 What JavaScript is?
-First JavaScript script.
 Comments
 Internal JS
 External JS File
