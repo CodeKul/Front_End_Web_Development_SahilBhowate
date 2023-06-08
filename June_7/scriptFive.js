@@ -1,12 +1,12 @@
 //true
 //false
 
-//falsy values OR false boolean values in js
+//falsy values OR false boolean values in js are as follows
 // Null
 // 0
 // Nan
 //"" - empty String
-//Undefined
+//undefined
 
 //All other values in js except the above ones including arrays , objects are truthy values
 //Or true boolean values.
