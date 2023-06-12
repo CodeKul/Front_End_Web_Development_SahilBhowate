@@ -1,4 +1,4 @@
-let studentObj = {};
+let studentObj = {}; //empty object
 
 console.log("studentObj is ", studentObj);
 
