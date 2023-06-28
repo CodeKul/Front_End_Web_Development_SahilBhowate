@@ -7,7 +7,12 @@ function addFun(a) {
 //Arrow Function
 let addFun = (a) => a + 100;
 
-//Understanding arrow functions
+///the above arrow function in more detail would look as shown below.
+//let addFun = (a) => {
+// return a + 100;
+// }
+
+//Understanding arrow function's syntax
 //[1] Parameters are on the left hand side of the arrow operator
 
 //[2] If there is a single parameter like in the above example ; then we do not necessarily need to enclose that parameter in parentheses.
@@ -23,3 +28,4 @@ let addFun = (a) => a + 100;
 //return statement ; then at that time there is no need to write the "return keyword". And also there is no need to give the opening "curly bracket {" and "closing curly bracket }" to the function body.
 
 //[6] The function body in the arrow functions starts from the right hand side of the arrow operator.
+
