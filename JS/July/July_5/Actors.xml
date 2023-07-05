@@ -1,0 +1,23 @@
+<Actors>
+
+    <Actor>
+        <firstName>Tom</firstName>
+        <lastName>Cruise</lastName>
+    </Actor>
+
+    <Actor>
+        <firstName>Harold</firstName>
+        <lastName>Kumar</lastName>
+    </Actor>
+
+    <Actor>
+        <firstName>John</firstName>
+        <lastName>Carpenter</lastName>
+    </Actor>
+
+    <Actor>
+        <firstName>Morgan</firstName>
+        <lastName>Freeman</lastName>
+    </Actor>
+
+</Actors>
