@@ -41,15 +41,3 @@ const result = arr.map((singleElement) => {
 });
 
 console.log("The result is ", result);
-
-//Below question could be solved using filter() method.
-//let arr = [1,2,3,4,5,6,7];
-//We need an array called outputArray where the element '5' does not exists.
-//Delete the element '5' from the array arr.
-//So , we need outputArray = [1,2,3,4,6,7]
-
-//Below question could be solved using the spread operator in js.
-//We have an array called arr = [1,2,3,4,5,6,7,8,9,10,11,22,33,44,55,66,77];
-//We need to copy each and every element of the array arr into the array called
-//"outputArray".
-//That is , we need outputArray = [1,2,3,4,5,6,7,8,9,10,11,22,33,44,55,66,77];

@@ -30,4 +30,4 @@ Layout and Alignment of html elements using css flexbox.
 
 Layout and Alignment of html elements using css grid.
 
-Introduction to Bootstrap framework.
+Introduction to Tailwind CSS framework.
