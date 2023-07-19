@@ -7,6 +7,6 @@
 //[2]Encapsulation
 //[3]Polymorphism
 //[4]Association
-//[5]Aggregation
+//Aggregation
 
 //Regular Expressions
