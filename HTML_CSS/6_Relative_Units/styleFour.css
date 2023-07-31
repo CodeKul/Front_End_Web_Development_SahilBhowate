@@ -1,0 +1,21 @@
+/* Applying ems to font-size */
+body {
+  font-size: 16px;
+}
+
+.slogan {
+  /* Calculated pixel value = Inherited Pixel Value * 1.2 */
+  /* So , the calculated font-size is 16 * 1.2 = 19.2 */
+  font-size: 1.2em;
+  padding: 1.2em;
+  background-color: gray;
+}
+
+/* In the above slogan class the font size in ems should evaluate to  */
+/* Font size of the paragraph tag = 16 * 1.2 = 19.2 px */
+/* So , the current font size of paragraph tag is 19.2 px */
+/* Hence ,  */
+/* The padding in px */
+/* = current font size of paragraph tag * 1.2 (em number) */
+/* = 19.2 * 1.2  */
+/* = 23.04 */

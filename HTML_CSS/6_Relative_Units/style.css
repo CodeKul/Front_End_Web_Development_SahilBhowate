@@ -1,0 +1,14 @@
+/* // px is a absolute unit. Its meaning would not change upon the change of the screen size. */
+
+/* em ,rem --- is a relative unit. Its meaning would change upon the change of screen size. */
+/* note: Relative units would change based on the externa factors; */
+
+.padded {
+  font-size: 16px;
+  padding: 1em;
+  border: 1px dotted black;
+}
+
+/* In the above case 1em means 16px */
+/* Note: The local definition of em would depend on the font size of that element. */
+/* So , 1em = Current font-size of that element. */

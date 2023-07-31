@@ -1,0 +1,14 @@
+/* Applying ems to font-size */
+body {
+  font-size: 16px;
+}
+
+.slogan {
+  /* Calculated pixel value = Inherited Pixel Value * 1.2 */
+  /* So , the calculated font-size is 16 * 1.2 = 19.2 */
+  font-size: 1.2em;
+}
+
+/* If the requirement is 10px font ; then how would you calculate the number given to the em unit. The inherited font-size is 12 px ? */
+/* RequiredPixelValue (divided by) InheritedPixelValue = Measurement in ems */
+/* Solution : 10/12 = 0.83em */

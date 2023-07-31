@@ -1,0 +1,13 @@
+.box {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: lightgray;
+}
+
+.paddingSmall {
+  font-size: 12px;
+}
+
+.paddinglarge {
+  font-size: 18px;
+}
