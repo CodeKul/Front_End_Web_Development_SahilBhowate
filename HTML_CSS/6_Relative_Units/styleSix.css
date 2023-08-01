@@ -1,0 +1,28 @@
+/* Note: The root node of the html document has a special pseudo-class selector (:root) */
+/* This is equivalent to using the tag selector 'html' */
+
+/* Rem stands for root-em */
+/* 1.2 rem would mean 1.2 times the font size of the root element.*/
+
+/* html {
+  background-color: aqua;
+} */
+
+/* :root{
+ background-color: aqua;
+} */
+
+/* The below :root pseudo selector is targetting the html tag */
+:root {
+  /* The root element has a font size of 16px. */
+  /* Since html tag has no parent element. So the inherited font size for the html tag would be considered as 16 px itself. */
+  /* So here ; 1em = 1 * 16 */
+
+  font-size: 1em;
+  /* font-size: 20px; */
+}
+
+ul {
+  /* The font-size of the ul element in px would be 16 * 0.8 = 12.8 */
+  font-size: 0.8rem;
+}
