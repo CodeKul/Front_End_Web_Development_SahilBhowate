@@ -1,0 +1,38 @@
+/* defining class for grid container */
+.grid {
+  display: grid;
+  /* display: inline-grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 300px 1fr 2fr;
+  /* grid-template-columns: 1fr 1fr 2fr; */
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5em;
+}
+
+.grid > * {
+  background-color: darkgray;
+  color: white;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+/* Example of proportion */
+/* 1:2:3   */
+/* 1*x + 2*x + 3*x = 100; */
+/* x * 6 =100 */
+/* x = 100/6 = 16.66 */
+
+/* So  */
+/* The calculation for    */
+/* grid-template-columns: 1fr 1fr 2fr;  */
+/* is as follows */
+/* 1*x = 1*16.66 = 16.66 */
+/* 2*x = 2*16.66 = 33.33 */
+/* 3*x = 3*16.66 = 49.98  */
+
+/* Total = 1034 px  */
+/* 1*x + 2*x = 1034  */
+/* 3x = 1034  */
+/* x  = 344.66 */
+/* So 1x = 1fr = 344.66 */
+/* And 2x = 2fr = 344.66 * 2 = 689.32  */
