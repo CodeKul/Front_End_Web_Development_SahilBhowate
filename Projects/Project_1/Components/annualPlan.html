@@ -1,65 +1,63 @@
 <html>
   <head>
-    <title>Annual Plan section</title>
+    <title>Annual Section</title>
+
+    <style>
+      .musicalNote {
+        height: 43px;
+        width: 43px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .annualPlanGrid {
+        display: flex;
+        gap: 16px;
+        margin-left: 7px;
+        border: 1px solid black;
+      }
+
+      .annualPlanParentGrid {
+        border: 1px solid purple;
+        display: flex;
+        gap: 80px;
+        width: fit-content;
+        background-color: #f8f9fe;
+      }
+    </style>
 
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <style>
-      .musicalNotation {
-        background-color: #dfe5fc;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid black;
-      }
-
-      .musicCustomStyle {
-        color: #757ea6;
-        font-size: 30px;
-      }
-
-      .annualPlanParentStyle {
-        display: flex;
-        align-items: center;
-        border: 1px solid black;
-        justify-content: space-between;
-        width: 346px;
-      }
-
-      .parentMostDiv {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 350px;
-      }
-    </style>
   </head>
 
   <body>
-    <div class="parentMostDiv">
-      <div class="annualPlanParentStyle">
-        <div class="musicalNotation">
-          <i class="bx bxs-music musicCustomStyle"></i>
+    <div class="annualPlanParentGrid">
+      <div class="annualPlanGrid">
+        <div class="musicalNote">
+          <i class="bx bxs-music"></i>
         </div>
 
-        <div style="border: 1px solid black">
-          <div style="font-weight: bolder; font-size: 20px">Annual plan</div>
-          <div style="color: #9599af; font-size: 20px; margin-top: 3px">
-            $59.9/year
-          </div>
+        <div>
+          <div style="font-weight: bolder">Annual Plan</div>
+          <div style="margin-top: 5px">$59.99/year</div>
         </div>
+      </div>
 
-        <div style="text-align: center">
-          <div>
-            <a href="#">Change</a>
-          </div>
-        </div>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          border: 1px solid black;
+          width: 80px;
+          justify-content: center;
+        "
+      >
+        <a href="#">Change</a>
       </div>
     </div>
   </body>

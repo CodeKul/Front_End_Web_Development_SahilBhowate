@@ -1,0 +1,77 @@
+.orderSummaryTitle {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.orderSummaryContent {
+  font-size: 0.9em;
+  color: #748097;
+}
+
+.orderSummaryContentParent {
+  text-align: center;
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.orderParent {
+  text-align: center;
+  /* border: 1px solid black; */
+  width: fit-content;
+}
+
+.musicalNote {
+  height: 43px;
+  width: 43px;
+  background-color: #e0e5fc;
+  color: #757da3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.annualPlanGrid {
+  display: flex;
+  gap: 16px;
+  margin-left: 7px;
+  /* border: 1px solid black; */
+}
+
+.annualPlanParentGrid {
+  /* border: 1px solid purple; */
+  display: flex;
+  gap: 80px;
+  width: fit-content;
+  background-color: #f8f9fe;
+}
+
+.paymentBtn {
+  background-color: #382ae1;
+  border-color: #382ae1;
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  width: 323px;
+  height: 39px;
+}
+
+.cancelBtn {
+  background-color: white;
+  border-color: white;
+  color: #6f7fa2;
+  font-weight: bolder;
+  border-radius: 5px;
+  width: 323px;
+  height: 39px;
+}
+
+.parentContainer {
+  width: 25em;
+  height: 34em;
+  /* border: 1px solid black; */
+  border-radius: 12px;
+  background-color: white;
+}

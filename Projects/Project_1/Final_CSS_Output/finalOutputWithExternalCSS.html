@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Order Summary</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./finalStyle.css" />
+  </head>
+
+  <body style="display: grid; place-items: center; background-color: #d6e1ff">
+    <div class="parentContainer">
+      <div class="imageContainer">
+        <img
+          src="./musicPic.png"
+          alt="musicPic not found"
+          style="
+            width: 25em;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+          "
+        />
+      </div>
+
+      <div
+        style="
+          display: grid;
+          row-gap: 20px;
+          place-items: center;
+          /* border: 1px solid green; */
+          margin-top: 25px;
+          background-color: white;
+        "
+      >
+        <!-- section One -->
+        <div
+          style="
+            width: 25em;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <div class="orderParent">
+            <div class="orderSummaryTitle">Order Summary</div>
+
+            <div class="orderSummaryContentParent">
+              <div class="orderSummaryContent">
+                You can now listen to millions of songs,
+              </div>
+              <div class="orderSummaryContent">
+                audiobooks, and podcasts on any device
+              </div>
+              <div class="orderSummaryContent">anywhere you like!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section Two -->
+        <div
+          style="
+            width: 25em;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <div class="annualPlanParentGrid">
+            <div class="annualPlanGrid">
+              <div class="musicalNote">
+                <i class="bx bxs-music"></i>
+              </div>
+
+              <div>
+                <div style="font-weight: bolder">Annual Plan</div>
+                <div style="margin-top: 5px; color: #7e87a0">$59.99/year</div>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                /* border: 1px solid black; */
+                width: 80px;
+                justify-content: center;
+              "
+            >
+              <a href="#">Change</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- section three -->
+        <div
+          style="
+            width: 25em;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <button class="paymentBtn">Proceed to Payment</button>
+        </div>
+
+        <!-- section four -->
+        <div
+          style="
+            width: 25em;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <button class="cancelBtn">Cancel Order</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
