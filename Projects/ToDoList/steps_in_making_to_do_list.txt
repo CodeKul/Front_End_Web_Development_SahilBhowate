@@ -1,0 +1,17 @@
+1) Make use of the template literal string to modify the UI of the list.
+
+2) Make the arrangement to store the data inside localStorage on click of the "Add" button. 
+   The previously existing data is there. And then ; the latest data is pushed in the array and that array is put
+   in the localStorage.
+
+3) Whatever data is added in the localStorage ; that data should be stored in the form of array of objects. Each object 
+   should have two keys. First key is id and the second key is taskName. Write a function that would display the 
+   data stored inside the localStorage. We need this function ; because we need the data to be displayed even when the
+   reload icon of the browser has been clicked.   
+
+4) On the click of delete icon the data at the appropriate row inside the table should be deleted from the localStorage.
+   Call the function displayDataInsideLocalStorage(); at the end of addItemToTheList() function body in order to reflect
+   the changes made inside the localStorage.
+
+5) Update UI with the latest array (the array which is there after deleting the item); 
+   inside the localStorage. In order to achieve this ; pass the id to deleteItem() function.

@@ -1,1 +1,85 @@
-lg:w-[400px]
+<html>
+  <head>
+    <title>Tailwind CSS Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="grid items-center justify-items-center bg-[#d6e1ff]">
+    <!-- "parentContainer" -->
+    <div class="lg:w-[400px] lg:h-[560px] bg-white rounded-xl">
+      <div>
+        <img
+          src="./musicPic.png"
+          alt="musicPic not found"
+          class="w-[400px] rounded-tl-lg rounded-tr-lg"
+        />
+      </div>
+
+      <div class="grid gap-y-5 place-items-center mt-[25px] bg-white">
+        <!-- section One -->
+        <div class="w-[400px] flex justify-center">
+          <div class="text-center w-fit">
+            <div class="font-bold text-2xl">Order Summary</div>
+
+            <div class="text-center w-fit mt-5">
+              <div class="text-sm text-[#748097]">
+                You can now listen to millions of songs,
+              </div>
+              <div class="text-sm text-[#748097]">
+                audiobooks, and podcasts on any device
+              </div>
+              <div class="text-sm text-[#748097]">anywhere you like!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section Two -->
+        <div class="flex justify-center w-[400px]">
+          <div class="flex gap-2 w-fit bg-[#f8f9fe]">
+            <div class="flex gap-4 ml-2">
+              <div class="flex gap-4 ml-4 items-center">
+                <div
+                  class="h-[43px] w-[43px] bg-[#e0e5fc] text-[#757da3] rounded-full flex items-center justify-center"
+                >
+                  <i class="bx bxs-music"></i>
+                </div>
+
+                <div>
+                  <div class="font-bold">Annual Plan</div>
+                  <div class="mt-1.5 text-[#7e87a0]">$59.99/year</div>
+                </div>
+              </div>
+
+              <div class="flex items-center w-20 justify-items-center">
+                <a href="#">Change</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section Three -->
+        <div class="flex justify-center w-[400px]">
+          <button
+            class="bg-[#382ae1] border-[#382ae1] text-[#FFFFFF] font-bold rounded-md w-[323px] h-[39px]"
+          >
+            Proceed to Payment
+          </button>
+        </div>
+
+        <!-- section Four -->
+        <div class="flex justify-center w-[400px]">
+          <button
+            class="bg-white border-white text-[#6f7fa2] font-bold rounded-md w-[323px] h-[39px]"
+          >
+            Cancel Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
