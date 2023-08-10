@@ -9,7 +9,7 @@
    data stored inside the localStorage. We need this function ; because we need the data to be displayed even when the
    reload icon of the browser has been clicked.   
 
-4) On the click of delete icon the data at the appropriate row inside the table should be deleted from the localStorage.
+4) On the click of delete icon the data at the appropriate row inside the table should be    deleted from the localStorage.
    Call the function displayDataInsideLocalStorage(); at the end of addItemToTheList() function body in order to reflect
    the changes made inside the localStorage.
 

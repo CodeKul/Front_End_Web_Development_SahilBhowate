@@ -1,0 +1,46 @@
+Project's github link is below
+<!-- https://github.com/AbtahiHasan/random-advice-generator/tree/main -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adviser</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center items-center h-screen">
+      <div>
+        <form class="flex gap-5" id="search-advice">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered input-secondary w-full max-w-xs"
+            autocomplete="off"
+          />
+          <button type="submit" class="btn">Search</button>
+        </form>
+
+        <section class="mt-5">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body" id="advice">
+              <h2 class="card-title">Advice #55</h2>
+              <p>bla bla bla</p>
+            </div>
+            <button class="btn" id="get-advice">get</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

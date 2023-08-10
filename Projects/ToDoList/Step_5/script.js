@@ -12,6 +12,8 @@ function deleteItem(requiredTaskId) {
 
   let taskData = JSON.parse(localStorage.getItem("taskName"));
 
+  console.log("taskData inside the deleteItem function is ", taskData);
+
   let updatedArrayAfterDeletion = [];
 
   for (let tempTaskObj of taskData) {
@@ -20,10 +22,12 @@ function deleteItem(requiredTaskId) {
     }
   }
 
-  //store the updated array inside the localStorage
+  console.log("The updatedArrayAfterDeletion is ", updatedArrayAfterDeletion);
+
+  // //store the updated array inside the localStorage
   localStorage.setItem("taskName", JSON.stringify(updatedArrayAfterDeletion));
 
-  //update the UI with latest data.
+  // //update the UI with latest data.
   displayDataInsideLocalStorage();
 }
 
