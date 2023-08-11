@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Soultion to media query problem</title>
+
+    <style>
+      @media (orientation: landscape), (min-width: 1024px) {
+        div.container {
+          display: flex;
+          border: 1px solid red;
+          gap: 200px;
+          align-items: center;
+          gap: 124px;
+          height: fit-content;
+          /* flex-direction: row-reverse; */
+        }
+      }
+      @media (orientation: landscape), (min-width: 768px) {
+        div.container {
+          display: flex;
+          border: 1px solid red;
+          gap: 200px;
+          align-items: center;
+          gap: 124px;
+          height: fit-content;
+          flex-direction: row-reverse;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="display: flex; justify-content: center">
+    <div class="container">
+      <!-- element one of the flex -->
+      <div style="border: 1px solid pink; margin-left: 95px">
+        <div style="border: 1px solid black">
+          <div style="font-size: 2em; font-weight: bold">Grow Together</div>
+
+          <div style="margin-top: 10px">
+            <div>Generate meaningful discussions with your audience and</div>
+            <div>build a strong, loyal community. Think of the insightful</div>
+            <div>conversations you miss out on with a feedback form</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- element two of the flex -->
+      <div style="border: 1px solid black; width: fit-content">
+        <img src="./illustration-grow-together.svg" style="width: 300px" />
+      </div>
+    </div>
+  </body>
+</html>
