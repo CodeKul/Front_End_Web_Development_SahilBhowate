@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Soultion to media query problem</title>
+
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+
+    <style>
+      @media screen and (max-width: 2560px) {
+        .container {
+          display: flex;
+          border: 1px solid red;
+          align-items: center;
+          gap: 124px;
+          height: fit-content;
+        }
+        .growTogetherTextContainer {
+          border: 1px solid black;
+          order: 1;
+          margin-left: 95px;
+        }
+        .growTogetherImage {
+          border: 1px solid black;
+          width: fit-content;
+          order: 2;
+        }
+        .growTogetherTitle {
+          font-size: 2em;
+          font-weight: bold;
+        }
+        .growTogetherContent {
+          margin-top: 10px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .container-sm {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid red;
+          align-items: center;
+          gap: 20px;
+          height: fit-content;
+        }
+        .growTogetherTitle-sm {
+          font-size: 1.5em;
+          font-weight: bold;
+          text-align: center;
+        }
+        .growTogetherTextContainer-sm {
+          border: 1px solid black;
+          order: 2;
+          margin-left: 0px;
+        }
+        .growTogetherImage-sm {
+          border: 1px solid black;
+          width: fit-content;
+          order: 1;
+          text-align: center;
+        }
+        .growTogetherContentStyle {
+          margin-top: 12px;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="display: flex; justify-content: center">
+    <div class="container container-sm">
+      <!-- element one of the flex -->
+      <div class="growTogetherTextContainer growTogetherTextContainer-sm">
+        <div>
+          <div class="growTogetherTitle growTogetherTitle-sm">
+            Grow Together
+          </div>
+
+          <div class="growTogetherContentStyle">
+            <div style="color: #9ea4aa">
+              Generate meaningful discussions with your audience and
+            </div>
+            <div style="color: #9ea4aa">
+              build a strong, loyal community. Think of the insightful
+            </div>
+            <div style="color: #9ea4aa">
+              conversations you miss out on with a feedback form
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- element two of the flex -->
+      <div class="growTogetherImage growTogetherImage-sm">
+        <img
+          src="./illustration-grow-together.svg"
+          style="width: 300px"
+          alt="Image Not Available"
+        />
+      </div>
+    </div>
+  </body>
+</html>
