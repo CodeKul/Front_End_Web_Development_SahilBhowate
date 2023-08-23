@@ -27,3 +27,22 @@ Expected Output :
 [7, 9, 0]
 [7, 9, 0, -2]
 []
+
+4. Write a JavaScript function to get the last element of an array. Passing the parameter 'n' will return the last 'n' elements of the array.
+Test Data :
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2],3));
+console.log(last([7, 9, 0, -2],6));
+Expected Output :
+-2
+[9, 0, -2]
+[7, 9, 0, -2]
+
+5. Write a simple JavaScript program to join all elements of the following array into a string.
+Sample array : myColor = ["Red", "Green", "White", "Black"];
+Expected Output :
+"Red,Green,White,Black"
+"Red,Green,White,Black"
+"Red+Green+White+Black"
+
+6. Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
