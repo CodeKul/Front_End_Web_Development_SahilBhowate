@@ -1,7 +1,7 @@
 //Arrays
 //Array is an object is js.
 
-//Array isa collection of similar elements.
+//Array is a collection of similar elements.
 //Declaration of array literals.
 //An array of numbers
 let myArray = [1, 2, 3, 4, 5, 6];
