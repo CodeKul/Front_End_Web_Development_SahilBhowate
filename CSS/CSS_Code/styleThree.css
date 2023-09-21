@@ -1,0 +1,16 @@
+/* class selector */
+.divStyle {
+  color: brown;
+}
+
+/* id selector */
+#divId {
+  color: green;
+  font-weight: bold;
+}
+
+/* tag selector */
+p {
+  color: blueviolet;
+  font-weight: bold;
+}
