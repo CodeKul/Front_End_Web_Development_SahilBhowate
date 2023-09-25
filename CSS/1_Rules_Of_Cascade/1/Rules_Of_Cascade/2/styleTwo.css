@@ -1,6 +1,7 @@
 .pageTitleStyle {
   font-size: large;
   color: red;
+  font-family: monospace;
 }
 
 #titleId {

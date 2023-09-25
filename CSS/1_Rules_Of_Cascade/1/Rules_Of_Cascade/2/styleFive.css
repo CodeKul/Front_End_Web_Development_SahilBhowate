@@ -1,16 +1,18 @@
-.pageTitleStyleOne {
+.pageStyleThree {
   font-size: large;
-  color: rgb(0, 0, 0);
+  color: yellow;
 }
 
 .pageTitleStyleTwo {
   font-size: large;
   color: brown;
+  /* "font-family" is the uncommon css property among the three class names. */
+  font-family: monospace;
 }
 
-.pageStyleThree {
+.pageTitleStyleOne {
   font-size: large;
-  color: yellow;
+  color: rgb(0, 0, 0);
 }
 
 h1 {
