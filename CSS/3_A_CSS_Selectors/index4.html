@@ -1,0 +1,30 @@
+<!-- Usage : -- You can apply the selector to the parent HTML tag and all the child elements will inherit the property from the parent tags properties. -->
+
+<html>
+  <head>
+    <title>Class Multiple</title>
+
+    <style type="text/css">
+      /* Below notation would be class multiple selector. Because div tag has some 
+        child elements. */
+      div.redcolor {
+        color: red;
+      }
+
+      /* Below notation would be class selector. Because h1 tag does not have any
+      child elements.*/
+      h1.bluecolor {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="redcolor">
+      <p>This is red color paragraph.</p>
+      <span>This is content inside span tag.</span>
+    </div>
+
+    <h1 class="bluecolor">Blue colored heading.</h1>
+  </body>
+</html>
