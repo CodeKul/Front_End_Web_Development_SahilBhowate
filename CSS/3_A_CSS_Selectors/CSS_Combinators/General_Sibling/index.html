@@ -1,0 +1,36 @@
+<!-- Note : --- The selection div~p means that it is only
+going to select p siblings that are AFTER div elements. The siblings before do not get affected.  -->
+
+<!-- p ~ div
+--- is going to select div siblings that are AFTER p elements. -->
+
+<html>
+  <head>
+    <title>Sibling Combinator</title>
+
+    <style>
+      /* div ~ p {
+        color: red;
+      } */
+
+      p ~ div {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>This is paragraph 1.</p>
+
+    <div>
+      <p>This is paragraph 2.</p>
+
+      <div>
+        <p>This is paragraph 3.</p>
+      </div>
+    </div>
+
+    <p>This is paragraph 4.</p>
+    <p>This is paragraph 5.</p>
+  </body>
+</html>
