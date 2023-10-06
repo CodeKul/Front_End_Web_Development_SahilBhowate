@@ -1,0 +1,37 @@
+<!-- This combinator is similar to the sibling combinator. The difference is that while the sibling combinator matches all siblings that come AFTER an element, the adjacent combinator matches only the IMMEDIATE sibling that comes after an element.
+
+To use this combinator, you use the plus (+) symbol like this:
+
+div + p {
+  color: red;
+} 
+
+This styling affects p elements that are IMMEDIATE siblings after div elements. 
+-->
+
+<html>
+  <head>
+    <title>Adjacent Sibling Combinator</title>
+
+    <style>
+      div + p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>This is paragraph 1.</p>
+
+    <div>
+      <p>This is paragraph 2.</p>
+
+      <div>
+        <p>This is paragraph 3.</p>
+      </div>
+    </div>
+
+    <p>This is paragraph 4.</p>
+    <p>This is paragraph 5.</p>
+  </body>
+</html>

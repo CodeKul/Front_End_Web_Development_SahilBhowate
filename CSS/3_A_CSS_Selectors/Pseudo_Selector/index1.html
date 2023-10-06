@@ -1,0 +1,25 @@
+<!-- Demonstrate the "after" pseudo element ? -->
+<html>
+  <head>
+    <title>Web page title.</title>
+    <style>
+      .paraStyle::after {
+        content: "Content after the full stop.";
+      }
+
+      /* span::after {
+        content: "Things after the full stop";
+      } */
+    </style>
+  </head>
+
+  <body>
+    <span>
+      One of the often overlooked features of CSS are the pseudo-element
+      selectors.
+    </span>
+
+    <p class="paraStyle">This is the content in paragraph tag.</p>
+    <p>This is the content in paragraph tag.</p>
+  </body>
+</html>
