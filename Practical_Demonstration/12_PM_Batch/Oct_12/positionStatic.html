@@ -1,0 +1,62 @@
+<!-- Note:-- Whenever the position property of the html element is not specified ;
+        at that time the position property of the html element is "static". -->
+<html>
+  <head>
+    <title>Position Static</title>
+
+    <style>
+      #A {
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+        top: 40px;
+        left: 100px;
+        position: static;
+      }
+
+      #B {
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+        position: static;
+      }
+
+      #C {
+        border: 1px solid black;
+        width: 700px;
+        height: 100px;
+        top: 40px;
+        left: 100px;
+        position: static;
+      }
+
+      #D {
+        border: 1px solid black;
+        width: 700px;
+        height: 100px;
+        position: static;
+      }
+
+      #E {
+        border: 1px solid black;
+        width: 900px;
+        height: 100px;
+        top: 40px;
+        left: 100px;
+        position: static;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="A">Static width:30px height:40px</div>
+
+    <div id="B">Static width:200px height:100px;</div>
+
+    <div id="C">Static width:700px height:250px;</div>
+
+    <div id="D">Static width:700px height:650px;</div>
+
+    <div id="E">Static width:900px height:850px;</div>
+  </body>
+</html>
