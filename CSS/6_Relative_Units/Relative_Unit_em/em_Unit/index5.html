@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Nested List em unit</title>
+
+    <style>
+      body {
+        font-size: 16px;
+      }
+
+      ul {
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      This list is nested inside the first
+      <li>
+        Top level one, inheriting its font size . . .
+        <ul>
+          <li>
+            Second level
+            <ul>
+              . . . and this one is nested inside of that,
+              <li>
+                Third level inheriting the second list’s font size . . .
+                <ul>
+                  <li>
+                    Fourth level . . . and so on
+                    <ul>
+                      <li>Fifth level</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

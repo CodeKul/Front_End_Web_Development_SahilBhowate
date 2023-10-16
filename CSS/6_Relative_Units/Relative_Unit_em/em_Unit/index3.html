@@ -1,0 +1,28 @@
+<!-- If you declare font size:
+1.2em , what does that mean? A font size can’t equal 1.2 times itself. Instead, font-size
+ems are derived from the inherited font size. -->
+
+<!-- The slogan’s specified font size is 1.2 em. To determine the calculated pixel value,
+you’ll need to refer to the inherited font size of 16 px: 16 times 1.2 equals 19.2, so the
+calculated font size is 19.2 px. -->
+
+<html>
+  <head>
+    <title>Using ems to define font-size</title>
+    <style>
+        body{
+            font-size:16px;
+        }
+
+        .slogan{
+            font-size:1.2em
+        }
+    </style>
+  </head>
+
+  <body>
+    We love coffee.
+
+    <p class="slogan">We love coffee.</p>
+  </body>
+</html>

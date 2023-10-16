@@ -1,0 +1,23 @@
+<!-- Note : --- The ruleset specifies a font size
+of 16 px, which becomes the element’s local definition for 1 em. Then the code uses
+ems to specify the padding of the element. -->
+
+<html>
+  <head>
+    <title>Relative Unit em</title>
+
+    <style>
+        .divStyle{
+            border:1px solid black;
+            font-size:16px;
+            padding:2em;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="divStyle">
+        This is element has a padding in ems.
+    </div>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+The alignment of second div changes when the border is removed.
+
 <html>
   <head>
     <title>Icons using boxicons</title>
@@ -7,25 +9,18 @@
     />
 
     <style>
-      .chatWindowHeader {
+      .chatWindowContainer {
         background-color: #db586c;
         width: 368px;
         height: fit-content;
         text-align: center;
       }
-
-      .chatSection {
-        width: 368px;
-        height: 400px;
-        background-color: white;
-        border-bottom: lightslategray;
-      }
     </style>
   </head>
 
-  <body style="background-color: #aba0c3">
-    <div class="chatWindowHeader">
-      <div style="border: 1px solid #db586c">
+  <body>
+    <div class="chatWindowContainer">
+      <div style="border: 1px solid black">
         <div style="float: left">
           <span style="color: white"><i class="bx bx-signal-4"></i> </span>
           <span style="color: white">Snooze</span>
@@ -41,7 +36,7 @@
         </div>
       </div>
 
-      <div style="border: 1px solid #db586c">
+      <div style="border: 1px solid black">
         <div style="float: left">
           <span style="color: white"><i class="bx bx-chevron-left"></i></span>
         </div>
@@ -54,21 +49,6 @@
           <span style="color: white"><i class="bx bxs-phone-call"></i></span>
           <span style="color: white"><i class="bx bxs-video"></i></span>
         </div>
-      </div>
-    </div>
-
-    <div class="chatSection"></div>
-
-    <div style="display: inline-block; background-color: white">
-      <input
-        style="width: 348px; height: 40px; border: none"
-        placeholder="Write something..."
-      />
-
-      <div style="display: inline-block">
-        <span style="color: #e06271">
-          <i class="bx bxl-telegram"></i>
-        </span>
       </div>
     </div>
   </body>
