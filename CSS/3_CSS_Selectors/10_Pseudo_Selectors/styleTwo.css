@@ -1,0 +1,3 @@
+span::before {
+  content: "Content before the span tag.";
+}
