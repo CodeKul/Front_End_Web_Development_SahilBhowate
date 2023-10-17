@@ -9,27 +9,31 @@
 
       ul {
         font-size: 0.8em;
+
+        /* To reverse the effect you can give the font size greater than 1 */
+        /* font-size: 2em; */
       }
     </style>
   </head>
 
   <body>
     <ul>
-      This list is nested inside the first
+      This list is nested inside the first --- 12.8 px
       <li>
-        Top level one, inheriting its font size . . .
+        Top level one, inheriting its font size . . .12.8 px
         <ul>
           <li>
-            Second level
+            Second level ... 10.24 px
             <ul>
-              . . . and this one is nested inside of that,
+              . . . and this one is nested inside of that, ...8.192 px
               <li>
-                Third level inheriting the second list’s font size . . .
+                Third level inheriting the second list’s font size . . . 8.192
+                px
                 <ul>
                   <li>
-                    Fourth level . . . and so on
+                    Fourth level . . . and so on ... 6.553 px
                     <ul>
-                      <li>Fifth level</li>
+                      <li>Fifth level ... 5.242 px</li>
                     </ul>
                   </li>
                 </ul>
