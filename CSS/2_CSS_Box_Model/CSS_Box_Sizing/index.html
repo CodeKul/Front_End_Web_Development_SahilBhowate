@@ -1,7 +1,33 @@
 <html>
   <head>
     <title>CSS Box Sizing</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .divStyleOne {
+        height: 250px;
+        width: 200px;
+        border: 1px solid black;
+       
+      }
+
+      .divStyleTwo {
+        margin-top: 40px;
+        height: 250px;
+        width: 200px;
+        border: 1px solid red;
+        padding: 25px;
+      
+      }
+    </style>
   </head>
 
-  <body></body>
+  <body>
+    <div class="divStyleOne">This is div one</div>
+
+    <div class="divStyleTwo">This is div two</div>
+  </body>
 </html>
