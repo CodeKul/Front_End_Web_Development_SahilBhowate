@@ -1,0 +1,48 @@
+There are 3 ways to include CSS in your code.
+1) Inline CSS --- By using the style attribute
+2) Internal CSS --- By using the <style> </style> tag inside the head tag.
+3) External CSS --- By using the <link/> tag inside the head tag.
+
+CSS is a collection of pairs of
+propertyName : propertyValue;
+
+------CSS Selectors------
+
+There are various ways of targetting a particular HTML tag for applying CSS to it.
+These "various ways" are called as "CSS Selectors".
+Basically, there are 10 kinds of CSS Selectors as shown below.
+1) Universal Selectors
+2) Type Selectors
+3) Class Selectors
+4) Class Multiple Selectors
+5) ID Selectors
+6) ID Multiple Selectors
+7) Attribute Selectors 
+8) Group Selectors
+9) CSS Combinators
+10) Pseudo Selectors
+
+------CSS Box Model------ [box sizing , and border radius and rounded corners]
+
+------CSS Z-Index Property------
+
+------CSS Overflow Property------
+
+------CSS Properties------ top , bottom , left , right
+
+------CSS Position Property------
+
+------CSS Display Property------
+
+------Relative and absolute units in CSS------
+      px --- absolute unit
+      vw, vh, em, rem --- relative units
+
+------CSS Flexible Box Layout------
+
+------CSS Grid Layout------
+
+------CSS Media Queries------
+
+
+
