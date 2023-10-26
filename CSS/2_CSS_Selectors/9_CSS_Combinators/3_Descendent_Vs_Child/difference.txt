@@ -1,1 +1,2 @@
-The descendant combinator matches a child, grandchild, and so on. The child combinator selects elements that are direct children of another element.
+The descendant combinator matches a child, grandchild, and so on. 
+The child combinator selects elements that are direct children of another element.
