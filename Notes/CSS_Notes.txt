@@ -1,4 +1,4 @@
-There are 3 ways to include CSS in your code.
+[1]------There are 3 ways to include CSS in your code.------
 1) Inline CSS --- By using the style attribute
 2) Internal CSS --- By using the <style> </style> tag inside the head tag.
 3) External CSS --- By using the <link/> tag inside the head tag.
@@ -6,7 +6,7 @@ There are 3 ways to include CSS in your code.
 CSS is a collection of pairs of
 propertyName : propertyValue;
 
-------CSS Selectors------
+[2]------CSS Selectors------
 
 There are various ways of targetting a particular HTML tag for applying CSS to it.
 These "various ways" are called as "CSS Selectors".
@@ -19,30 +19,38 @@ Basically, there are 10 kinds of CSS Selectors as shown below.
 6) ID Multiple Selectors
 7) Attribute Selectors 
 8) Group Selectors
-9) CSS Combinators
-10) Pseudo Selectors
+9) Pseudo Selectors
+10) CSS Combinators
+---- [1]Child Combinator
+---- [2]Descendent Combinator
+---- [3]General Sibling Combinator
+---- [4]Adjacent Sibling Combinator
 
-------CSS Box Model------ [box sizing , and border radius and rounded corners]
+[3]------CSS Box Model------ [box sizing , and border radius and rounded corners]
 
-------CSS Z-Index Property------
+[4]------CSS Z-Index Property------
 
-------CSS Overflow Property------
+[5]------CSS Overflow Property------
 
-------CSS Properties------ top , bottom , left , right
-
-------CSS Position Property------
-
-------CSS Display Property------
-
-------Relative and absolute units in CSS------
+[6]------Relative and absolute units in CSS------
       px --- absolute unit
       vw, vh, em, rem --- relative units
 
-------CSS Flexible Box Layout------
+[7]------Rules of the cascade------    
 
-------CSS Grid Layout------
+[8]------CSS Display Property------
 
-------CSS Media Queries------
+[9]------CSS Properties------ top , bottom , left , right
+
+[9]------CSS Position Property------
+
+[10]------CSS Flexible Box Layout------
+
+[11]------CSS Media Queries------[fluid flexbox layouts]
+
+[12]------CSS Grid Layout------
+
+
 
 
 

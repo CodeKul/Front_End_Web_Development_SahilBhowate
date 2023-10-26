@@ -1,0 +1,12 @@
+div#grid {
+  display: grid;
+
+  grid-template-areas:
+    "x y y y y"
+    "x center center center w"
+    "x center center center w"
+    "x z z z z";
+
+  width: 1000px;
+  height: 500px;
+}

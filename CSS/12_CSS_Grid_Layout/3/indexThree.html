@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Connectors in Media Rules</title>
+    <style>
+      /* @media (orientation: landscape) and (min-width: 1080px) {
+        p {
+          color: red;
+          font-size: 36px;
+        }
+      } */
+      @media (orientation: landscape), (min-width: 1080px) {
+        p {
+          color: red;
+          font-size: 36px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p>Checking Media Query Rules</p>
+    </div>
+  </body>
+</html>

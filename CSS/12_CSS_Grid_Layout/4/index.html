@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Grid System Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (orientation: landscape) {
+        .navbarStyleContainer {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+
+          background-color: darkgray;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: x-large;
+          text-align: center;
+        }
+      }
+
+      @media (orientation: portrait) {
+        .navbarStyleContainer {
+          display: flex;
+          flex-direction: column;
+          background-color: darkgray;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: x-large;
+          text-align: center;
+        }
+
+        .flexItem {
+          margin-left: 41%;
+        }
+      }
+    </style>
+  </head>
+
+  <div class="navbarStyleContainer">
+    <div class="flexItem"><a href="#">Home</a></div>
+    <div class="flexItem"><a href="#">About Us</a></div>
+    <div class="flexItem"><a href="#">Contact Us</a></div>
+    <div class="flexItem"><a href="#">Office Address</a></div>
+  </div>
+</html>

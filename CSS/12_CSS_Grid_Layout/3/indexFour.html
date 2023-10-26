@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Grid System Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (orientation: landscape) {
+        .navbarStyleContainer {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+        }
+      }
+
+      .navbarStyleContainer > * {
+        background-color: darkgray;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <div class="navbarStyleContainer">
+    <div><a href="#">Home</a></div>
+    <div><a href="#">About Us</a></div>
+    <div><a href="#">Contact Us</a></div>
+    <div><a href="#">Office Address</a></div>
+  </div>
+</html>
