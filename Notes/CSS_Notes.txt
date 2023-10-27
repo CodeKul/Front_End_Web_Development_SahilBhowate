@@ -26,15 +26,15 @@ Basically, there are 10 kinds of CSS Selectors as shown below.
 ---- [3]General Sibling Combinator
 ---- [4]Adjacent Sibling Combinator
 
-[3]------CSS Box Model------ [box sizing , and border radius and rounded corners]
+[3]------Relative and absolute units in CSS------
+      px --- absolute unit
+      vw, vh, em, rem --- relative units
 
-[4]------CSS Z-Index Property------
+[4]------CSS Box Model------ [box sizing , and border radius and rounded corners]
 
 [5]------CSS Overflow Property------
 
-[6]------Relative and absolute units in CSS------
-      px --- absolute unit
-      vw, vh, em, rem --- relative units
+[6]------CSS Z-Index Property------
 
 [7]------Rules of the cascade------    
 

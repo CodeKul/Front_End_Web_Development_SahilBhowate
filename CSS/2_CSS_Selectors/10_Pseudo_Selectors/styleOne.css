@@ -4,4 +4,6 @@
 
 span::after {
   content: "Things after the full stop";
+  font-size: 200%;
+  color: aqua;
 }
