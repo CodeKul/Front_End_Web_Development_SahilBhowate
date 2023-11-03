@@ -26,18 +26,46 @@ Basically, there are 10 kinds of CSS Selectors as shown below.
 ---- [3]General Sibling Combinator
 ---- [4]Adjacent Sibling Combinator
 
+Remaining in 6 PM Batch
 [3]------Relative and absolute units in CSS------
       px --- absolute unit
       vw, vh, em, rem --- relative units
 
+Remaining in 6 PM Batch
 [4]------CSS Box Model------ [box sizing , and border radius and rounded corners]
 
+Remaining in 6 PM Batch
 [5]------CSS Overflow Property------
 
+Remaining in 6 PM Batch
 [6]------CSS Z-Index Property------
 
-[7]------Rules of the cascade------    
+[7]------Rules of the cascade------
 
+[1] One div tag has been applied internal css style. That div tag was targeted using
+id selector , and also using tag selector. So which style would be given priority ? -- [tag selector or id selector ?] --- answer is id selector
+
+[2] One div tag has been applied internal css style. That div tag was targeted using
+class selector , and also using tag selector. So which style would be given priority ? -- [tag selector or class selector ?] --- answer is class selector
+
+[3] When the given html tag is applied the same style through id selector , tag
+selector , and class selector then at that time which css style should be given
+the priority ?
+--- id selector is given the highest priority.
+
+[4] When the given html tag is applied the same style through external css and inline css ;  then at that time which css style should be given the priority ? 
+--- When there are same css properties written in inline css and external css ; then at that time the inline css properties would be given highest priority.
+
+[5] When the given html tag is applied the same style through internal css and inline css ;  then at that time which css style should be given the priority ? 
+--- When there are same css properties written in inline css and internal css ; then at that time the inline css properties would be given the highest priority.
+
+[6] When the given html tag is applied the same style through internal css and external css ;  then at that time which css style should be given the priority ?
+--- When there are same css properties written in internal css and external css ; then at that time the internal css properties would be given the highest priority.
+
+[7] When the given html tag is not given the id. And the html tag is given multiple class names under the 'class' attribute. Then at that time which style would be applied to the given html element ?
+--- The css property which is mentioned at the last in style.css file is applied to the given html element.
+
+Remaining in 6 PM Batch
 [8]------CSS Display Property------
 
 [9]------CSS Properties------ top , bottom , left , right
