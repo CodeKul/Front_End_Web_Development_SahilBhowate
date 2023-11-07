@@ -1,3 +1,0 @@
-Why do they include three values in the font-family property ?
-
-What is the purpose of font variant css property ?

@@ -1,0 +1,22 @@
+[1] One div tag has been applied internal css style. That div tag was targeted using
+id selector , and also using tag selector. So which style would be given priority ? -- [tag selector or id selector ?] --- answer is id selector
+
+[2] One div tag has been applied internal css style. That div tag was targeted using
+class selector , and also using tag selector. So which style would be given priority ? -- [tag selector or class selector ?] --- answer is class selector
+
+[3] When the given html tag is applied the same style through id selector , tag
+selector , and class selector then at that time which css style should be given
+the priority ?
+--- id selector is given the highest priority.
+
+[4] When the given html tag is applied the same style through external css and inline css ;  then at that time which css style should be given the priority ? 
+--- When there are same css properties written in inline css and external css ; then at that time the inline css properties would be given highest priority.
+
+[5] When the given html tag is applied the same style through internal css and inline css ;  then at that time which css style should be given the priority ? 
+--- When there are same css properties written in inline css and internal css ; then at that time the inline css properties would be given the highest priority.
+
+[6] When the given html tag is applied the same style through internal css and external css ;  then at that time which css style should be given the priority ?
+--- When there are same css properties written in internal css and external css ; then at that time the internal css properties would be given the highest priority.
+
+[7] When the given html tag is not given the id. And the html tag is given multiple class names under the 'class' attribute. Then at that time which style would be applied to the given html element ?
+--- The css property which is mentioned at the last in style.css file is applied to the given html element.

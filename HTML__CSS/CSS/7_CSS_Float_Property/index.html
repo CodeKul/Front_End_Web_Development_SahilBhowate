@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>CSS Float</title>
+
+    <style>
+      .parentContainerStyle {
+        border: 1px solid black;
+        height: 300px;
+        width: 900px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parentContainerStyle">
+      <div style="float: left; text-align: center; border: 1px solid black">
+        <b>float:left</b>
+      </div>
+
+      <div style="float: left; text-align: center; border: 1px solid black">
+        <b>float:left</b>
+      </div>
+
+      <div style="float: right; text-align: center; border: 1px solid black">
+        <b>float:right</b>
+      </div>
+    </div>
+
+    <p>
+      Blocking elements with float:left and float:right appear on the same row,
+      as long as the sum of their widths is less than the width of the parent
+      element.
+    </p>
+  </body>
+</html>

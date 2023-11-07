@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>CSS Box Sizing</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .divStyle {
+        border: 1px solid black;
+        height: 80px;
+        width: 378px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+      }
+
+      .divStyleTwo {
+        border: 1px solid black;
+        height: 80px;
+        width: 378px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="divStyle">This is the content inside div element one.</div>
+
+    <div class="divStyleTwo">This is the content inside div element two.</div>
+  </body>
+</html>

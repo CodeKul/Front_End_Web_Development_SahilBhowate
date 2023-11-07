@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>CSS Float</title>
+
+    <style>
+      .parentContainerStyle {
+        border: 1px solid black;
+        height: 300px;
+        width: 900px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parentContainerStyle">
+      <div
+        style="
+          float: left;
+          text-align: center;
+          border: 1px solid black;
+          width: 800px;
+        "
+      >
+        <b>float:left</b>
+      </div>
+
+      <div
+        style="
+          float: right;
+          text-align: center;
+          border: 1px solid black;
+          width: 200px;
+        "
+      >
+        <b>float:right</b>
+      </div>
+    </div>
+
+    <p>
+      If the total sum of two floating element's is greater than parent's width,
+      one of them will be blocked by the other and skip over to the next row.
+    </p>
+  </body>
+</html>
