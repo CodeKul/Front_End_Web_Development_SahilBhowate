@@ -38,14 +38,18 @@ Basically, there are 10 kinds of CSS Selectors as shown below.
 
 [7]------CSS Float Property------
 
-[8]------CSS Position Property------And top , bottom , left , right
+[8]------CSS Flexible Box Layout------
 
-[9]------CSS Flexible Box Layout------
+[9]------CSS Grid Layout------
 
-[10]------CSS Media Queries------[fluid flexbox layouts]
+[10]------CSS Position Property------And top , bottom , left , right
 
-[11]------CSS Grid Layout------
+[11]------CSS Overflow Property------
 
-[12]------CSS Overflow Property------
+[12]------CSS Z-Index Property------
 
-[13]------CSS Z-Index Property------
+[13]------CSS Media Queries------[fluid flexbox layouts]
+
+
+
+
