@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Layout Using Float</title>
+
+    <style>
+      .box {
+        height: 130px;
+        width: 130px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      .blue {
+        background-color: blue;
+        float: left;
+      }
+
+      .green {
+        background-color: green;
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box blue"></div>
+
+    <div class="box blue"></div>
+
+    <div class="box blue"></div>
+
+    <div class="box blue"></div>
+
+    <div style="clear: left">
+      <div class="box green"></div>
+
+      <div class="box green"></div>
+
+      <div class="box green"></div>
+
+      <div class="box green"></div>
+    </div>
+
+  </body>
+</html>

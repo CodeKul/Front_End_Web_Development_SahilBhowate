@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>CSS Z-Index</title>
+
+    <style>
+      img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+
+      p {
+        position: absolute;
+        z-index: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="./istockphoto-1337232523-1024x1024.jpg" />
+
+    <p>This is the demonstration of z index property.</p>
+  </body>
 </html>
