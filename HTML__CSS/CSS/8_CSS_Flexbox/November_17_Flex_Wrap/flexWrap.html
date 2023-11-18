@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>flex wrap property</title>
+
+    <style>
+      .container {
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .temImg {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+
+      .teamMember {
+        text-align: center;
+      }
+
+      .teamRole {
+        font-size: 0.9rem;
+        color: brown;
+        margin-top: 4px;
+      }
+
+      .team-name {
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="teamMember">
+        <img src="./MenEmployee.jpeg" class="temImg" />
+        <h3 class="team-name">Satish Raut</h3>
+        <p class="teamRole">Founder And CEO</p>
+      </div>
+
+      <div class="teamMember">
+        <img src="./MenEmployee.jpeg" class="temImg" />
+        <h3 class="team-name">Rakesh Sharma</h3>
+        <p class="teamRole">Web Developer</p>
+      </div>
+
+      <div class="teamMember">
+        <img src="./womanEmployee.jpeg" class="temImg" />
+        <h3 class="team-name">Raksha</h3>
+        <p class="teamRole">Digital Marketer</p>
+      </div>
+
+      <div class="teamMember">
+        <img src="./MenEmployee.jpeg" class="temImg" />
+        <h3 class="team-name">Satish Raut</h3>
+        <p class="teamRole">UX Designer</p>
+      </div>
+    </div>
+  </body>
+</html>

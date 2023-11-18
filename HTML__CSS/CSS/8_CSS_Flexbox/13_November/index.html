@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Flexbox first exmaple</title>
+
+    <style>
+      .container {
+        border: 1px solid black;
+        display: flex;
+        width: fit-content;
+        /* display: inline-flex; */
+      }
+
+      .quote {
+        border: 1px solid black;
+        font-family: serif;
+        font-style: italic;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        background-color: steelblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="quote">
+        <p>
+          "Truth is ever to be found in simplicity, and not in the multiplicity
+          and confusion of things."
+        </p>
+        <span>-Sir Issac Newton</span>
+      </div>
+
+      <div class="quote">
+        <p>"Genius is patience."</p>
+        <span>-Sir Issac Newton</span>
+      </div>
+
+      <div class="quote">
+        <p>
+          "If I have seen further it is by standing on the shoulders of giants."
+        </p>
+        <span>-Sir Issac Newton</span>
+      </div>
+    </div>
+
+    <span>Span element after the flex container.</span>
+  </body>
+</html>

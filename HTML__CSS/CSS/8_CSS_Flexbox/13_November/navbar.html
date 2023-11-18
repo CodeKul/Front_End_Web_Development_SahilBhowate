@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Navigation Tabs</title>
+
+    <style>
+      .navigationWrapper {
+        padding: 3rem;
+        background-color: cornflowerblue;
+      }
+
+      a {
+        padding: 0.6rem;
+        color: black;
+        text-decoration: none;
+        background-color: burlywood;
+      }
+
+      .menuContainerOne {
+        display: flex;
+        justify-content: flex-start;
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+      }
+
+      .menuContainerTwo {
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>justify-content:flex-start</p>
+    <div class="navigationWrapper">
+      <div class="menuContainerOne">
+        <a href="#">Profile</a>
+
+        <a href="#">Notifications</a>
+
+        <a href="#">Payments</a>
+
+        <a href="#">Settings</a>
+      </div>
+    </div>
+
+    <p>justify-content:flex-end</p>
+
+    <div class="navigationWrapper">
+      <div class="menuContainerTwo">
+        <a href="#">Profile</a>
+
+        <a href="#">Notifications</a>
+
+        <a href="#">Payments</a>
+
+        <a href="#">Settings</a>
+      </div>
+    </div>
+  </body>
+</html>

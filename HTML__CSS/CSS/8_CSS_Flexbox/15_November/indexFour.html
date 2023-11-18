@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>CSS Flexbox align-items And Justify Content Difference</title>
+
+    <style>
+      .flexContainer {
+        display: flex;
+        /* display: inline-flex; */
+        /* flex-direction: row; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        height: 400px;
+        width: 700px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      What is the difference between CSS Flexbox align-items And justify-content
+      property ?
+    </h1>
+
+    <div class="flexContainer">
+      <div style="border: 1px solid black; width: 30px; height: 30px">1</div>
+      <div style="border: 1px solid black; width: 30px; height: 30px">2</div>
+      <div style="border: 1px solid black; width: 30px; height: 30px">3</div>
+      <div style="border: 1px solid black; width: 30px; height: 30px">4</div>
+      <div style="border: 1px solid black; width: 30px; height: 30px">5</div>
+    </div>
+
+    <p>
+      The flex items are arranged along the main axis using the justify-content
+      property. Depending on the direction of the main axis ; the ouput of the
+      justify-content property will change.
+    </p>
+
+    <p>
+      The flex items are arranged along the cross axis using the align-items
+      property. Depending on the direction of the cross axis ; the output of the
+      align-items property will change.
+    </p>
+
+    <p>
+      How to identify the directions of main-axis ? It depends on the value of
+      the flex-direction property. By default the value of flex-direction
+      property is row.
+    </p>
+
+    <p>
+      How to identify the direction of cross-axis ? The cross axis is always
+      perpendicular to the main axis. So , you have to identify the direction of
+      the main axis first.
+    </p>
+
+    <p>
+      What does the flex-direction property decide ? It decides the direction in
+      which the flex items would be displayed.
+    </p>
+  </body>
+</html>
