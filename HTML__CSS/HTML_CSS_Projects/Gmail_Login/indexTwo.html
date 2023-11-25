@@ -1,12 +1,16 @@
 <html>
   <head>
-    <titile>Display child div at the center of parent div</titile>
+    <title>Display div at the center of the screen.</title>
 
     <style>
+      body {
+        margin: 0;
+      }
+
       .flexContainerStyle {
         border: 1px solid black;
-        width: 900px;
-        height: 600px;
+        width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,8 +25,6 @@
   </head>
 
   <body>
-    <h1>Display div at the center of parent div</h1>
-
     <div class="flexContainerStyle">
       <div class="flexChildStyle">Flex Child</div>
     </div>

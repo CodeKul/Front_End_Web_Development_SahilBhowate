@@ -1,0 +1,41 @@
+.propertyTitle {
+  font-weight: bolder;
+}
+
+.childStyle {
+  border: 1px solid black;
+  width: 95px;
+  height: 95px;
+}
+
+.parentContainer1 {
+  border: 1px solid black;
+  width: 921px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.parentContainer2 {
+  border: 1px solid black;
+  width: 921px;
+  height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.parentContainer3 {
+  border: 1px solid black;
+  width: 921px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.parentContainer4 {
+  border: 1px solid black;
+  width: 921px;
+  height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
+}

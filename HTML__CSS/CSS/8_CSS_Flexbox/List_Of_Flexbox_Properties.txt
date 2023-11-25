@@ -1,0 +1,36 @@
+Properties for the Parent (flex container)
+
+display : flex;
+
+flex-direction: row | row-reverse | column | column-reverse;
+
+flex-wrap: nowrap | wrap | wrap-reverse;
+
+flex-flow: column wrap;
+
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+
+align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+
+gap: 10px;
+gap: 10px 20px; /* row-gap column gap */
+row-gap: 10px;
+column-gap: 20px;
+
+Properties for the Children
+(flex items)
+order: 5; /* default is 0 */
+
+flex-grow: 4; /* default 0 */
+
+flex-shrink: 3; /* default 1 */
+
+flex-basis:  | auto; /* default auto */
+
+flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+
+
