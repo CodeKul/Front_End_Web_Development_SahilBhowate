@@ -1,0 +1,31 @@
+.propertyTitle {
+  font-weight: bolder;
+}
+
+.childStyle {
+  border: 1px solid black;
+  width: 95px;
+  height: 95px;
+}
+
+.parentContainer1 {
+  border: 1px solid black;
+  width: 921px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.parentContainer2 {
+  border: 1px solid black;
+  width: 921px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  overflow-y: scroll;
+  /* row-gap column gap */
+  /* gap: 20px 20px; */
+}
