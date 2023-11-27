@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Flex Grow</title>
+
+    <style>
+      .container {
+        border: 1px solid black;
+        display: flex;
+      }
+
+      #email {
+        flex-grow: 1;
+        /* flex-grow: 2; */
+      }
+
+      #buttonElement {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <input placeholder="Email Address" id="email" />
+
+      <button id="buttonElement">Subscribe</button>
+    </div>
+  </body>
+</html>
