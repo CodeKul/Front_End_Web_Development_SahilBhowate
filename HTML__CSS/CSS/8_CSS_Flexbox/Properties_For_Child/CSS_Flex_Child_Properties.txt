@@ -1,0 +1,124 @@
+<div class="cardContainer">
+ 
+  <div style="width:250px; border:1px solid black;height:200px">
+    Image
+  </div> 
+  
+  <div>
+    KILOBEATERS Premium Christmas Plum Cake With Dry Fruits And Nuts,         Made With
+  </div>
+  
+  <div style="flex-grow:1">
+    <p>
+    ₹599 (₹199.67/100 g)
+    Get it by Saturday, 9 December
+    FREE Delivery
+  </p>  
+  </div> 
+  
+  <div>
+     <p>
+    <b>Plum Cake</b>
+  </p>  
+  </div> 
+ 
+  
+  <div >
+     <button style="width:250px">
+    Buy Now
+  </button> 
+  </div>  
+  
+</div>
+
+
+
+---------------------CSS File-------------------------------
+/* flex is a short hand property for flex-grow , flex-shrink , and flex-basis */
+/*   flex:1; */
+/*   flex-grow: */
+/*   flex-shrink: */
+/*   flex-basis: */
+
+.cardContainer{
+  height:500px;
+  width:250px;
+  border:5px solid yellow;
+  display:flex;
+  flex-direction:column;
+}
+
+------------------------------------------------------------
+<div class="container">
+ 
+  <div class="home">
+    Home
+  </div> 
+  
+  <div class="logout">
+    Logout
+  </div>  
+</div>
+
+---------------------------------------------------------------
+css part
+/* flex is a short hand property for flex-grow , flex-shrink , and flex-basis */
+/*   flex:1; */
+/*   flex-grow: */
+/*   flex-shrink: */
+/*   flex-basis: */
+
+.container{
+  border:5px solid yellow;
+  display:flex;
+}
+
+.home{
+  flex-shrink:1;
+  text-align:center;
+  color:yellow;
+  background-color:green;
+  border:1px solid black;
+}
+
+.logout{
+  flex-shrink:10;
+  text-align:center;
+  color:yellow;
+  background-color:maroon;
+  border:1px solid black;
+}
+
+
+----------------------------------------------------------------------
+<div class="container">
+  
+  <div style="background-color:red;flex-basis:120px;flex-shrink:1">
+    One
+  </div> 
+  
+   <div style="background-color:blue;flex-basis:120px;flex-shrink:1">
+    Two
+  </div> 
+  
+   <div style="background-color:yellow;flex-basis:120px;flex-shrink:1">
+    Three
+  </div> 
+  
+   <div style="background-color:brown;flex-basis:120px;flex-shrink:2">
+    Four
+  </div> 
+  
+  <div style="background-color:green;flex-basis:120px;flex-shrink:2">
+    Five
+  </div>
+ 
+</div>  
+
+------------------------------------------------------------------
+.container{
+  width:500px;
+  height:50px;
+  display:flex;
+  border:1px solid black;
+}
