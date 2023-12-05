@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Flex Grow</title>
+
+    <style>
+      .container {
+        border: 1px solid black;
+        display: flex;
+      }
+
+      #email {
+        /* flex-grow: 1; */
+        height: 300px;
+        border: 1px solid black;
+        flex-grow: 2;
+      }
+
+      #buttonElement {
+        flex-grow: 1;
+        height: 300px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="email"></div>
+
+      <div id="buttonElement"></div>
+    </div>
+  </body>
+</html>

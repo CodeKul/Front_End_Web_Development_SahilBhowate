@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>CSS Grid Exmaple</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .containerStyle {
+        border: 1px solid black;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 25% 75%;
+      }
+
+      .mainContentStyle {
+        border: 1px solid black;
+      }
+
+      .sidebarStyle {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Units used to specify the width of the css grid columns are as follows.
+    </p>
+
+    <ul>
+      <li>percentage %</li>
+      <li>pixels</li>
+      <li>rem</li>
+      <li>fr Unit -- is short for fraction.</li>
+    </ul>
+
+    <div class="containerStyle">
+      <div class="sidebarStyle">
+        <h1>Sidebar</h1>
+
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="mainContentStyle">
+        <h1>Main Content</h1>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>
