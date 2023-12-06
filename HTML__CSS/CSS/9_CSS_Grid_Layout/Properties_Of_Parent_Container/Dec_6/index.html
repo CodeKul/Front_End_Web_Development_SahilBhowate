@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>CSS Grid Parent Container Properties</title>
+
+    <style>
+      .gridContainerStyle {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+      }
+
+      .gridItemStyle {
+        border: 1px solid red;
+        background-color: gray;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainerStyle">
+      <div class="gridItemStyle">1</div>
+      <div class="gridItemStyle">2</div>
+      <div class="gridItemStyle">3</div>
+      <div class="gridItemStyle">4</div>
+      <div class="gridItemStyle">5</div>
+      <div class="gridItemStyle">6</div>
+    </div>
+  </body>
+</html>

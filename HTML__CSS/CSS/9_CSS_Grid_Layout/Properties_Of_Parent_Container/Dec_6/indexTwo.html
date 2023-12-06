@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Navigation Bar Using CSS Grid</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .gridContainerStyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      .gridItemStyle {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: black;
+        text-align: center;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainerStyle">
+      <div class="gridItemStyle">
+        <a href="#" style="text-decoration: none; color: white">Home</a>
+      </div>
+      <div class="gridItemStyle">
+        <a href="#" style="text-decoration: none; color: white">Careers</a>
+      </div>
+      <div class="gridItemStyle">
+        <a href="#" style="text-decoration: none; color: white">About Us</a>
+      </div>
+      <div class="gridItemStyle">
+        <a href="#" style="text-decoration: none; color: white"
+          >Company Address</a
+        >
+      </div>
+      <div class="gridItemStyle">
+        <a href="#" style="text-decoration: none; color: white">Contact Us</a>
+      </div>
+    </div>
+  </body>
+</html>
