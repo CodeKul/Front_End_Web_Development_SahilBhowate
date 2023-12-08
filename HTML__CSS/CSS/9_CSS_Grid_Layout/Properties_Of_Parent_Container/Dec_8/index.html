@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Grid System Example</title>
+
+    <style>
+      .righthandsideContainer {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+      }
+
+      .righthandsideGridItems {
+        border: 1px solid red;
+      }
+
+      .lefthandsideContainer{
+        border:1px solid red;
+      }
+
+      .mainContainer{
+        display:grid;
+        width: 550px;
+        height: 300px;
+        grid-template-columns: 1fr 3fr;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <div class="lefthandsideContainer"></div>
+
+      <div class="righthandsideContainer">
+        <div class="righthandsideGridItems">1</div>
+        <div class="righthandsideGridItems">2</div>
+        <div class="righthandsideGridItems">3</div>
+
+        <div class="righthandsideGridItems">4</div>
+        <div class="righthandsideGridItems">5</div>
+        <div class="righthandsideGridItems">6</div>
+      </div>
+    </div>
+  </body>
+</html>
