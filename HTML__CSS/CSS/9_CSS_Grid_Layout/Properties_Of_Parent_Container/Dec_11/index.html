@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Results summary component</title>
+
+    <style>
+      .mainContainer {
+        width: 600px;
+        height: 400px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gridItemStyle {
+        border: 1px solid red;
+      }
+
+      .flexContainerOneStyle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+      }
+
+      .flexContainerOneItems {
+        text-align: center;
+        border: 1px solid red;
+      }
+
+      .flexContainerTwoStyle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+      }
+
+      .flexContainerTwoItems{
+        text-align: center;
+        border: 1px solid red;
+      }
+
+      .circleStyle{
+        border-radius: 100%;
+        border:1px solid violet;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <div class="gridItemStyle flexContainerOneStyle">
+        <div class="flexContainerOneItems">Your Result</div>
+        <div class="flexContainerOneItems circleStyle">76 of 100</div>
+        <div class="flexContainerOneItems">Great</div>
+        <div class="flexContainerOneItems">
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+
+      <div class="gridItemStyle flexContainerTwoStyle">
+        <div style="font-weight: bolder;">Summary</div>
+
+        <div class="flexContainerTwoItems">Reaction</div>
+
+        <div class="flexContainerTwoItems">Memory</div>
+
+        <div class="flexContainerTwoItems">Verbal</div>
+
+        <div class="flexContainerTwoItems">Visual</div>
+
+        <div class="flexContainerTwoItems"><button>Continue</button></div>
+      </div>
+    </div>
+  </body>
+</html>
