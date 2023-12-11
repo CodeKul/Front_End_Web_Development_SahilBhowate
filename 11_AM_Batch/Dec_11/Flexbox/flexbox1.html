@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Flexible Box Layout System</title>
+
+    <style>
+      .flexContainerStyle1 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .flexContainerStyle2 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .flexContainerStyle3 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flexContainerStyle4{
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .flexItemStyle {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>
+        flex-direction: row main axis originates from LHS of the flex container
+        and ends at the RHS of the flex container.
+      </li>
+
+      <li>
+        flex-direction: row-reverse main axis originates from RHS of the flex
+        container and ends at the LHS of the flex container.
+      </li>
+
+      <li>
+        flex-direction: column main axis originates from TOP of the flex
+        container and ends at the BOTTOM of the flex container.
+      </li>
+
+      <li>
+        flex-direction: column-reverse main axis originates from BOTTOM of the
+        flex container and ends at the TOP of the flex container.
+      </li>
+    </ul>
+
+    <p><b>flex-direction:row</b></p>
+
+    <div class="flexContainerStyle1">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>flex-direction:row-reverse</b></p>
+
+    <div class="flexContainerStyle2">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>flex-direction:column</b></p>
+
+    <div class="flexContainerStyle3">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr/>
+
+    <p><b>flex-direction:column-reverse</b></p>
+
+    <div class="flexContainerStyle4">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+  </body>
+</html>
