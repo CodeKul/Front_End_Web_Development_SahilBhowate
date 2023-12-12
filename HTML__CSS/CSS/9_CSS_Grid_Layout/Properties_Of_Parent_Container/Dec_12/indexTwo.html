@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Calculator</title>
+
+    <style>
+        .gridContainerStyle{
+            display:grid;
+            border:1px solid black;
+
+            width:500px;
+            height:500px;
+
+            background-color: gray;
+
+            grid-template-areas: "a b c DEL"
+            "a b c DEL"
+           
+            ;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainerStyle">
+      <div style="grid-area: a;">7</div>
+      <div style="grid-area: b;">8</div>
+      <div style="grid-area: c;">9</div>
+      <div style="grid-area: DEL;">DEL</div>
+      <div style="grid-area: d;">4</div>
+      <div style="grid-area: e;">5</div>
+      <div style="grid-area: f;">6</div>
+      <div style="grid-area: plus">+</div>
+      <div style="grid-area: g;">1</div>
+      <div style="grid-area: h;">2</div>
+      <div style="grid-area: i;">3</div>
+      <div style="grid-area: MINUS;">-</div>
+      <div style="grid-area: DOT;">.</div>
+      <div style="grid-area: j;">0</div>
+      <div style="grid-area: DIVISION">/</div>
+      <div style="grid-area: MULTIPLY">x</div>
+      <div style="grid-area:RESET">RESET</div>
+      <div style="grid-area: EQUALS">=</div>
+    </div>
+  </body>
+</html>
+
+<!-- "d e f plus"
+"g h i MINUS"
+"DOT j DIVISION MULTIPLY"
+"RESET EQUALS" -->

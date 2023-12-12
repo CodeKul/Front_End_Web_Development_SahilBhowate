@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>grid-template-areas</title>
+
+    <style>
+      .gridContainerStyle {
+        display: grid;
+
+        width: 700px;
+        height: 650px;
+
+        border: 1px solid black;
+
+        grid-template-areas:
+          "a a a a a"
+          "b b b b b"
+          "c d d d e"
+          "c d d d e"
+          "c d d d e"
+          "f f f f f";
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainerStyle">
+      <div style="grid-area: a; border: 1px solid red">Header</div>
+      <div style="grid-area: b; border: 1px solid red">Navigation Bar</div>
+      <div style="grid-area: c; border: 1px solid red">LHS Content</div>
+      <div style="grid-area: d; border: 1px solid red">Main Content</div>
+      <div style="grid-area: e; border: 1px solid red">RHS Content</div>
+      <div style="grid-area: f; border: 1px solid red">Footer</div>
+    </div>
+
+    <div>
+      <p>Steps are as follows :</p>
+      <ol>
+        <li>Count the number of sections</li>
+
+        <li>Give the css property value called grid-area to every section.</li>
+
+        <li>Mention the property called grid-template-areas inside the grid container's style.</li>
+      </ol>
+    </div>
+  </body>
+</html>
