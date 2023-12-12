@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>align-item</title>
+
+    <style>
+      .flexContainerStyle1 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+      }
+
+      .flexContainerStyle2 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        align-items: start;
+      }
+
+      .flexItemStyle {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p><b>align-items : center</b></p>
+
+    <div class="flexContainerStyle1">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>align-items : flex-start</b></p>
+
+    <div class="flexContainerStyle2">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+  </body>
+</html>

@@ -8,11 +8,7 @@
         width: 700px;
         height: 500px;
         display: flex;
-        flex-direction: row;
-        /* justify-content: flex-start; */
-        justify-content: flex-end;
-        justify-content: center;
-        justify-content: space-between;
+        justify-content: flex-start;
       }
 
       .flexContainerStyle2 {
@@ -20,11 +16,7 @@
         width: 700px;
         height: 500px;
         display: flex;
-        flex-direction: row-reverse;
-        /* justify-content: flex-start; */
-        /* justify-content: flex-end; */
-        /* justify-content: center */
-        justify-content: space-between;
+        justify-content: flex-end;
       }
 
       .flexContainerStyle3 {
@@ -32,15 +24,31 @@
         width: 700px;
         height: 500px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
       }
 
-      .flexContainerStyle4{
+      .flexContainerStyle4 {
         border: 1px solid black;
         width: 700px;
         height: 500px;
         display: flex;
-        flex-direction: column-reverse;
+        justify-content: space-between;
+      }
+
+      .flexContainerStyle5 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .flexContainerStyle6 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
       }
 
       .flexItemStyle {
@@ -52,29 +60,7 @@
   </head>
 
   <body>
-    <ul>
-      <li>
-        flex-direction: row main axis originates from LHS of the flex container
-        and ends at the RHS of the flex container.
-      </li>
-
-      <li>
-        flex-direction: row-reverse main axis originates from RHS of the flex
-        container and ends at the LHS of the flex container.
-      </li>
-
-      <li>
-        flex-direction: column main axis originates from TOP of the flex
-        container and ends at the BOTTOM of the flex container.
-      </li>
-
-      <li>
-        flex-direction: column-reverse main axis originates from BOTTOM of the
-        flex container and ends at the TOP of the flex container.
-      </li>
-    </ul>
-
-    <p><b>flex-direction:row</b></p>
+    <p><b>justify-content : flex-start</b></p>
 
     <div class="flexContainerStyle1">
       <div class="flexItemStyle">1</div>
@@ -88,7 +74,7 @@
 
     <hr />
 
-    <p><b>flex-direction:row-reverse</b></p>
+    <p><b>justify-content: flex-end;</b></p>
 
     <div class="flexContainerStyle2">
       <div class="flexItemStyle">1</div>
@@ -102,7 +88,7 @@
 
     <hr />
 
-    <p><b>flex-direction:column</b></p>
+    <p><b>justify-content: center</b></p>
 
     <div class="flexContainerStyle3">
       <div class="flexItemStyle">1</div>
@@ -114,11 +100,39 @@
       <div class="flexItemStyle">4</div>
     </div>
 
-    <hr/>
+    <hr />
 
-    <p><b>flex-direction:column-reverse</b></p>
+    <p><b>justify-content: space-between</b></p>
 
     <div class="flexContainerStyle4">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>justify-content: space-around</b></p>
+
+    <div class="flexContainerStyle5">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>justify-content: space-evenly</b></p>
+
+    <div class="flexContainerStyle6">
       <div class="flexItemStyle">1</div>
 
       <div class="flexItemStyle">2</div>
