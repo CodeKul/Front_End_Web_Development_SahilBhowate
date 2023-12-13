@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>CSS Grid align-items</title>
+
+    <style>
+      .gridContainerStyle {
+        border: 1px solid black;
+        width: 450px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        /* align-items: start; */
+        /* align-items: end; */
+        align-items: center;
+      }
+
+      .gridItemStyle {
+        border: 1px solid red;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainerStyle">
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+
+      <div class="gridItemStyle"><img src="./cake.jpg" /></div>
+    </div>
+  </body>
+</html>
