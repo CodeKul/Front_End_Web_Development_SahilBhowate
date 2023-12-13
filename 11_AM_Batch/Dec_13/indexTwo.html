@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>align-items vs align-content</title>
+    </head>
+
+    <style>
+        .flexContainer{
+            width:500px;
+            height:550px;
+            border:1px solid black;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* align-items: center; */
+            align-content: center;
+        }
+
+        img{
+            width:180px;
+            height:80px;
+        }
+    </style>
+
+    <body>
+
+
+        <div class="flexContainer">
+
+            <img src="./cake.jpg"/>
+            <img src="./cake.jpg"/>
+            <img src="./cake.jpg"/>
+            <img src="./cake.jpg"/>
+            <img src="./cake.jpg"/>
+            <img src="./cake.jpg"/>
+
+
+        </div>
+
+
+    </body>
+</html>

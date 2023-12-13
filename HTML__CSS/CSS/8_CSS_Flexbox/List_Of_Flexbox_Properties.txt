@@ -33,4 +33,5 @@ flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 
 align-self: auto | flex-start | flex-end | center | baseline | stretch;
 
-
+Note:-- The align-items:stretch , align-content:stretch ,
+And justify-content:stretch elongates along the direction of cross axis.

@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <title>Flexible Box Layout System</title>
+
+    <style>
+      .flexContainerStyle1 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+      }
+
+      .flexContainerStyle2 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .flexContainerStyle3 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .flexContainerStyle4 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flexContainerStyle5 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .flexContainerStyle6 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .flexContainerStyle7 {
+        border: 1px solid black;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .flexItemStyle {
+        border: 1px solid red;
+        /* width: 100px; */
+        /* height: 100px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <p><b>justify-content : flex-start</b></p>
+
+    <div class="flexContainerStyle1">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>justify-content: flex-end;</b></p>
+
+    <div class="flexContainerStyle2">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>justify-content: center</b></p>
+
+    <div class="flexContainerStyle3">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>justify-content: space-between</b></p>
+
+    <div class="flexContainerStyle4">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>justify-content: space-around</b></p>
+
+    <div class="flexContainerStyle5">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+
+    <p><b>justify-content: space-evenly</b></p>
+
+    <div class="flexContainerStyle6">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+
+    <hr />
+    <p><b>align-items:stretch</b></p>
+
+    <div class="flexContainerStyle7">
+      <div class="flexItemStyle">1</div>
+
+      <div class="flexItemStyle">2</div>
+
+      <div class="flexItemStyle">3</div>
+
+      <div class="flexItemStyle">4</div>
+    </div>
+  </body>
+</html>
