@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Grid-Item Properties</title>
+
+    <style>
+      .gridContainerStyle {
+        border: 1px solid black;
+        width: 500px;
+        height: 400px;
+
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        grid-template-rows: 100px 100px 100px;
+
+        /* align the grid system at the center of the grid container */
+        align-content: center;
+        justify-content: center;
+
+        /* align the content of the grid cell at the center of the grid cell */
+        /* align-items: center; */
+        /* justify-items: center; */
+      }
+
+      .cellContent {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainerStyle">
+      <div style="background-color: violet">
+        <div class="cellContent"></div>
+      </div>
+      <div style="background-color: aquamarine">
+        <div class="cellContent"></div>
+      </div>
+      <div style="background-color: yellow">
+        <div class="cellContent"></div>
+      </div>
+      <div style="background-color: brown"><div class="cellContent"></div></div>
+      <div style="background-color: burlywood">
+        <div class="cellContent"></div>
+      </div>
+      <div style="background-color: tomato">
+        <div class="cellContent"></div>
+      </div>
+      <div
+        style="background-color: teal; justify-self: center; align-self: center"
+      >
+        <div class="cellContent"></div>
+      </div>
+      <div style="background-color: blanchedalmond">
+        <div class="cellContent"></div>
+      </div>
+      <div style="background-color: green"><div class="cellContent"></div></div>
+    </div>
+  </body>
+</html>
