@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>CSS Grid System</title>
+
+    <style>
+      .gridContainer {
+        border: 1px solid black;
+        width: 500px;
+        height: 400px;
+
+        display:grid;
+
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        grid-column-gap:10px;
+        grid-row-gap:10px;
+
+        justify-content:center;
+        align-content: center;
+
+      }
+
+      .gridItemStyle{
+        border:1px solid red;
+      }
+
+      img{
+        height:50px;
+        width:50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainer">
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+      <div class="gridItemStyle"><img src="./cookie.jpg"/></div>
+    </div>
+  </body>
+</html>

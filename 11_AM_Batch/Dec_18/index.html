@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>CSS Grid System</title>
+
+    <style>
+      .gridContainer {
+        border: 1px solid black;
+        width: 500px;
+        height: 400px;
+
+        display:grid;
+
+        grid-template-rows: 20px 20px 20px;
+        grid-template-columns: 40px 40px 40px;
+      }
+
+      .gridItemStyle{
+        border:1px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainer">
+      <div class="gridItemStyle">grid</div>
+      <div class="gridItemStyle">grid</div>
+      <div class="gridItemStyle">grid</div>
+
+      <div class="gridItemStyle">grid</div>
+      <div class="gridItemStyle">grid</div>
+      <div class="gridItemStyle">grid</div>
+
+      <div class="gridItemStyle">grid</div>
+      <div class="gridItemStyle">grid</div>
+      <div class="gridItemStyle">grid</div>
+    </div>
+  </body>
+</html>

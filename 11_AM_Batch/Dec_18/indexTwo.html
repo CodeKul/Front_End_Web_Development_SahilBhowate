@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>CSS Grid System</title>
+
+    <style>
+      .gridContainer {
+        border: 1px solid black;
+        width: 500px;
+        height: 400px;
+
+        display:grid;
+
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap:10px;
+        grid-row-gap:10px;
+      }
+
+      .gridItemStyle{
+        border:1px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainer">
+      <div class="gridItemStyle">1</div>
+      <div class="gridItemStyle">2</div>
+      <div class="gridItemStyle">3</div>
+
+      <div class="gridItemStyle">4</div>
+      <div class="gridItemStyle">5</div>
+      <div class="gridItemStyle">6</div>
+
+      <div class="gridItemStyle">7</div>
+      <div class="gridItemStyle">8</div>
+      <div class="gridItemStyle">9</div>
+    </div>
+  </body>
+</html>
