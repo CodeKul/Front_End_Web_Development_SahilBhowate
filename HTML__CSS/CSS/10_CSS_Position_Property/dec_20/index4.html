@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>CSS Position absolute</title>
+
+    <style>
+      .divOne {
+        position: absolute;
+        /* top: 40px; */
+        /* left: 50px; */
+        border: 1px dotted black;
+        background-color: teal;
+      }
+
+      .containerStyle {
+        border: 1px solid black;
+        width: 600px;
+        height: 800px;
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      If the parent of the position:absolute element has position:static ; then
+      the position:absolute element goes out of proportion of the parent
+      element. And the top/bottom ; left/right property of the position:absolute
+      element acts according to its next parent element. Here , the next parent
+      element is body tag.
+    </p>
+
+    <p>
+      If the parent of the position:absolute element has
+      position:relative/sticky/fixed/absolute [means any non-static property] ;
+      then the position:absolute element would be in the proportion of the
+      parent element. And the top/bottom ; left/right property of the
+      position:absolute element acts according to its parent element.
+    </p>
+
+    <div class="containerStyle">
+      <div class="divOne">
+        <b>This is the div tag.</b>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odio
+        qui corrupti quisquam? Eaque pariatur recusandae voluptatem architecto
+        beatae quasi, inventore tempore dolorum porro, consequatur, dolor saepe
+        obcaecati atque quod temporibus exercitationem hic necessitatibus
+        adipisci laborum nam fuga animi vel alias. In quod at quisquam!
+      </div>
+    </div>
+  </body>
+</html>
