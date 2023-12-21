@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Instagram Clone</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .rhsContainer {
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 3rem;
+      }
+
+      .mainContainer {
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+        width: 100%;
+        height: 100%;
+      }
+
+      .lhsNavigation {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <!-- 1 fr div is below -->
+      <div class="lhsNavigation">
+        <div>Home</div>
+        <div>Search</div>
+        <div>Explore</div>
+        <div>Reels</div>
+        <div>Messages</div>
+        <div>Notifications</div>
+      </div>
+
+      <!-- 3 fr div is below -->
+      <div class="rhsContainer">
+        <div style="background-color: blueviolet"></div>
+        <div style="background-color: blanchedalmond"></div>
+      </div>
+    </div>
+  </body>
+</html>
