@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Navigaation bar with media query</title>
+
+    <style>
+      body {
+        margin: 0px;
+      }
+
+      /* below is horizontal navbar */
+      /* .navbarStyle {
+        display:flex;
+        border: 1px solid black;
+        height: 50px;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+      } */
+
+      /* below is vertical navbar */
+      /* .navbarStyle {
+        display:flex;
+        border: 1px solid black;
+        height: 200px;
+        background-color: black;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      } */
+
+      /* media query for the 500px viewport width */
+      @media screen and (width = 500px) {
+        .navbarStyle {
+          display: flex;
+          border: 1px solid black;
+          height: 200px;
+          background-color: black;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      /* media query for the viewport of width greater than 500px */
+      @media screen and (width > 500px) {
+        .navbarStyle {
+          display: flex;
+          border: 1px solid black;
+          height: 50px;
+          background-color: black;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbarStyle">
+      <div>
+        <a href="#">Home</a>
+      </div>
+
+      <div>
+        <a href="#">About Us</a>
+      </div>
+
+      <div><a href="#">Careers</a></div>
+
+      <div><a href="#">Address</a></div>
+
+      <div><a href="#">Contact Us</a></div>
+    </div>
+  </body>
+</html>

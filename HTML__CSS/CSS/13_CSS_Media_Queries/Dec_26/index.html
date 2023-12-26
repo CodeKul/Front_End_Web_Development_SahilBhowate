@@ -1,0 +1,27 @@
+<!-- /* [1] @media specifies the rule  */
+/* [2] The word 'screen' specifies the media type */
+/* [3] 'and' specifies the logical operator for various combinations of conditions to apply css */
+/* [4] (min-width:600px) specifies the media feature */ -->
+
+<html>
+  <head>
+    <title>CSS Media Query Example</title>
+
+    <style>
+      /* When the browser is at least 600px and above */
+      /* Apply the css ; if and only if the width of the viewport is greater than or equal to 600px */
+      @media screen and (min-width: 600px) {
+        .containerStyle {
+          width: 300px;
+          height: 300px;
+          border: 1px solid black;
+          background-color: blanchedalmond;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="containerStyle"></div>
+  </body>
+</html>
