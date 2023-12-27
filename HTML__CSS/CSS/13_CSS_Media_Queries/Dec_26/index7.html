@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>media feature oritentation</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* below is the media query for vertical navigation bar */
+        @media screen and (orientation : portrait) {
+            .navbarStyle {
+                display: flex;
+                border: 1px solid black;
+                height: 200px;
+                background-color: black;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        /* below is the media query for horizontal navigation bar */
+        @media screen and (orientation : landscape) {
+            .navbarStyle {
+                display: flex;
+                border: 1px solid black;
+                height: 50px;
+                background-color: black;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbarStyle">
+        <div>
+            <a href="#">Home</a>
+        </div>
+
+        <div>
+            <a href="#">About Us</a>
+        </div>
+
+        <div><a href="#">Careers</a></div>
+
+        <div><a href="#">Address</a></div>
+
+        <div><a href="#">Contact Us</a></div>
+    </div>
+</body>
+
+</html>
