@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Navigation Bar Responsive</title>
+
+    <style>
+        body {
+            margin: 0
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (orientation : landscape) {
+            .navBarContainer {
+                border: 1px solid black;
+                height: 50px;
+                background-color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        @media screen and (orientation : portrait) {
+            .navBarContainer {
+                background-color: black;
+                border: 1px solid black;
+                height: 170px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        /* below is the style for horizontal navbar */
+        /* .navBarContainer {
+            border: 1px solid black;
+            height: 50px;
+            background-color: black;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        } */
+
+        /* below is the style for vertical navbar */
+        /* .navBarContainer {
+            background-color: black;
+            border: 1px solid black;
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="navBarContainer">
+        <div>
+            <a href="#">Home</a>
+        </div>
+
+        <div>
+            <a href="#">About Us</a>
+        </div>
+
+        <div>
+            <a href="#">Carrers</a>
+        </div>
+
+        <div>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div>
+            <a href="#">Address</a>
+        </div>
+    </div>
+</body>
+
+</html>
