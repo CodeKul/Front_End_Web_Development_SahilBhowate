@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>CSS Transitions</title>
+
+    <style>
+      button {
+        background-color: hsl(180, 50%, 50%);
+        border: 0;
+        font-size: 1rem;
+        padding: 0.3em 1em;
+
+        transition-property: all;
+        transition-delay: 1s;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+      }
+
+      button:hover {
+        background-color: hsl(0, 50%, 50%);
+        border-radius: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>Hover over me</button>
+
+    <p>
+        <ol>
+          <li>
+            The transition-property property specifies which properties to transition.
+            In this case, the special keyword 'all' means to transition any properties
+            that change.
+          </li> 
+          
+          <li>The transition-delay property tells us after how many seconds of hovering ; the trnasition should start.</li>
+
+          <li>
+            The transition-duration property indicates how long the
+            transition will take before reaching the final value. In this case, 3s
+            is given, meaning 3 seconds.
+          </li>
+
+          <li>
+            Note that you did not apply the transition properties in the :hover ruleset; you
+            applied them with a selector that targets the element at all times, even though you are
+            doing so with the hover rule in mind.
+          </li>
+
+          <li>
+            You want to transition both while in the hover
+            state (transitioning in) and after the hover state (transitioning out). While other values
+            are changing, you typically don't want the transition properties themselves to change.
+          </li>
+        </ol>
+    </p>
+  </body>
+</html>
