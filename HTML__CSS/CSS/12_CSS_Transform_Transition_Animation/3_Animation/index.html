@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+
+        animation-name: over-and-back;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 3;
+      }
+
+      @keyframes over-and-back {
+        0% {
+          background-color: hsl(0, 50%, 50%);
+          transform: translate(0);
+        }
+
+        50% {
+          transform: translate(50px);
+        }
+
+        100% {
+          background-color: hsl(270, 50%, 90%);
+          transform: translate(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

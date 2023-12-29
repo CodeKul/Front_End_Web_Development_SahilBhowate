@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        /* border-top-left-radius: 30px; */
+        border-radius: 50%;
+
+        border-left:10px solid red;
+
+        animation-name: over-and-back;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes over-and-back{
+        from{
+            transform:rotate(0deg)
+        }
+
+        to{
+            transform:rotate(360deg)  
+        }
+      }
+
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
