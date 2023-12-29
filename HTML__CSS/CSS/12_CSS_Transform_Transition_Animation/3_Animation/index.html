@@ -9,7 +9,7 @@
         animation-name: over-and-back;
         animation-duration: 1.5s;
         animation-timing-function: linear;
-        animation-iteration-count: 3;
+        animation-iteration-count: infinite;
       }
 
       @keyframes over-and-back {
@@ -19,6 +19,11 @@
         }
 
         50% {
+          transform: translate(50px);
+        }
+
+        75% {
+          background-color: brown;
           transform: translate(50px);
         }
 
