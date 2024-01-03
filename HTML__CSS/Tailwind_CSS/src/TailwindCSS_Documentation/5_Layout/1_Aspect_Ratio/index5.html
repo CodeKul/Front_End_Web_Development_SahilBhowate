@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Customizing your theme for aspect ratio.</title>
+
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div><b>Using custom values</b></div>
+
+    <div>Customizing your theme</div>
+
+    By default, Tailwind provides a minimal set of aspect-ratio utilities. You
+    can customize these values by editing theme.aspectRatio or
+    theme.extend.aspectRatio in your tailwind.config.js file.
+
+    <pre>
+        module.exports = {
+            theme: {
+              extend: {
+                aspectRatio: {
+                  '4/3': '4 / 3',
+                },
+              }
+            }
+          }
+    </pre>
+  </body>
+</html>

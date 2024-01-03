@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Utility First Fundamentals</title>
+
+    <link href="./../../../../dist/output.css" rel="stylesheet" />
+
+    <style>
+      .btn-primary {
+        background-color: #0ea5e9;
+      }
+
+      .btn-primary:hover {
+        background-color: #0369a1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <b>Core Concepts Handling Hover, Focus, and Other States</b>
+
+    <p>
+      Every utility class in Tailwind can be applied conditionally by adding a
+      modifier to the beginning of the class name that describes the condition
+      you want to target. For example, to apply the bg-sky-700 class on hover,
+      use the hover:bg-sky-700 class: Hover over this button to see the
+      background color change
+    </p>
+
+    <button class="bg-sky-500 hover:bg-sky-700">Save changes</button>
+
+    <p>
+      <b>How does this compare to traditional CSS ?</b>
+
+      When writing CSS the traditional way, a single class name would do
+      different things based on the current state. Traditionally the same class
+      name applies different styles on hover
+    </p>
+
+    <div><b>Consider the below example written in pure CSS.</b></div>
+
+    <div>
+      <pre>
+        .btn-primary { 
+           background-color: #0ea5e9; 
+        } 
+        
+        .btn-primary:hover {
+          background-color: #0369a1; 
+        }
+      </pre>
+    </div>
+
+    <button class="btn-primary">Save changes</button>
+
+    <div>
+      <b>
+        This is what we mean when we say a utility class can be applied
+        conditionally — by using modifiers you can control exactly how your
+        design behaves in different states, without ever leaving your HTML.
+      </b>
+    </div>
+  </body>
+</html>

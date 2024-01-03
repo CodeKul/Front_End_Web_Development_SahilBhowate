@@ -1,0 +1,10 @@
+How to install tailwindCSS ?
+
+
+What is the content property in tailwind.config.js file's object ?
+
+Refer[https://tailwindcss.com/docs/content-configuration]
+
+Note
+[1] Never include CSS files in your content configuration
+[2] Tailwind uses the fast-glob library under-the-hood ; to scan all the files having tailwind css class names.

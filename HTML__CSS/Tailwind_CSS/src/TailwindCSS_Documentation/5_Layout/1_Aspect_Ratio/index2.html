@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Aspect Ratio Example</title>
+
+    <link rel="stylesheet" href="./../../../../dist/output.css"/>
+  </head>
+
+  <body>
+    <div>Layout</div>
+
+    <div>Aspect Ratio</div>
+
+    <div>Utilities for controlling the aspect ratio of an element.</div>
+
+    <pre>
+      aspect-auto	means aspect-ratio: auto;
+      aspect-square	means aspect-ratio: 1 / 1;
+      aspect-video means aspect-ratio: 16 / 9;
+    </pre>
+
+    <iframe
+      class="w-full aspect-video"
+      src="https://www.youtube.com/..."
+    ></iframe>
+
+    <div>
+        <span>Note :</span>
+        <span></span>
+          <b
+            >Tailwind does not include a large set of aspect ratio values out of the
+            box since it is easier to just use arbitrary values. See 
+            <a href="https://tailwindcss.com/docs/aspect-ratio#arbitrary-values" style="color:blue">the arbitrary values section</a>
+             for more information.</b
+          ></span
+        >
+    </div>
+
+    <div>
+        <b>Arbitrary values</b>
+    </div>
+
+    <div>
+        If you need to use a one-off aspect-ratio value that doesnt make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.
+
+        <p>Give class atrribute the following values</p>
+
+        <p>class="w-full aspect-[4/3]"</p>
+
+        <iframe class="w-full aspect-[4/3]" src="https://www.youtube.com/"></iframe>
+    </div>
+
+    <div>
+        Learn more about arbitrary value support in the <a style="color:blue" href="https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values">arbitrary values</a> documentation.
+    </div>
+  </body>
+</html>
