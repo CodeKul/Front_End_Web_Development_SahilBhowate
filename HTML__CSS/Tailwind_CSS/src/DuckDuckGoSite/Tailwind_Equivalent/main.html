@@ -13,10 +13,11 @@
   </head>
   <body>
     <div class="pt-8 pl-16 pr-16">
+      <!-- flex container -->
       <header
-        class="h-[40px] w-full border border-solid border-black flex justify-between items-center"
+        class="h-[42.4px] w-full border border-solid border-black flex justify-between items-center"
       >
-        <!-- duck duck go icon -->
+        <!-- flex item 1 -->
         <div class="border border-solid border-red-500">
           <svg
             fill="none"
@@ -83,44 +84,33 @@
           </svg>
         </div>
 
-        <!-- search bar for viewport width of 768px or greater than 768px-->
-        <!-- hide the below search bar for sm viewport size -->
+        <!-- flex item 2 -->
         <div
-          class="md:border md:border-solid md:border-red-500 md:flex md:items-center md:w-[calc(0.5*100vw)] sm:hidden"
+          class="md:border md:border-solid md:border-red-500 md:flex sm:hidden max-[640px]:hidden"
         >
           <input
+            class="border border-solid border-[#d9d9d9] outline-none h-[42.4px] md:w-[calc(0.5*100vw)]"
             placeholder="Search without being tracked"
-            class="outline-none border border-solid border-[#d9d9d9] rounded-md w-[552px] h-[40px]"
           />
 
-          <div>
-            <button class="bg-white">
-              <i class="bx bx-search text-3xl"></i>
-            </button>
-          </div>
+          <button class="h-[42.4px]"><i class="bx bx-search"></i></button>
         </div>
 
-        <!-- menu icon -->
+        <!-- flex item 3 -->
         <div class="border border-solid border-red-500">
-          <i class="bx bx-menu text-3xl"></i>
+          <i class="bx bx-menu"></i>
         </div>
       </header>
 
-      <!-- search bar for viewport width of 640px or greater than 640px -->
-      <!-- hide the below search bar for md viewport size -->
       <div
-        class="sm:border sm:border-solid sm:border-red-500 sm:flex sm:items-center sm:w-full sm:mt-2 md:hidden"
+        class="max-[768px]:border max-[768px]:border-solid max-[768px]:border-red-500 max-[768px]:w-full max-[768px]:flex max-[768px]:mt-2 md:hidden"
       >
         <input
+          class="border border-solid border-[#d9d9d9] outline-none h-[42.4px] w-full"
           placeholder="Search without being tracked"
-          class="outline-none border border-solid border-[#d9d9d9] rounded-md h-[40px] w-full"
         />
 
-        <div>
-          <button class="bg-white">
-            <i class="bx bx-search text-3xl"></i>
-          </button>
-        </div>
+        <button class="h-[42.4px]"><i class="bx bx-search"></i></button>
       </div>
     </div>
   </body>
