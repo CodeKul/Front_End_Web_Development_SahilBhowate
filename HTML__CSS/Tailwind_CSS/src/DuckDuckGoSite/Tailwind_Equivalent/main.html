@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./../../../dist/output.css" />
+    <link rel="stylesheet" href="../../../dist/output.css" />
 
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -86,10 +86,10 @@
 
         <!-- flex item 2 -->
         <div
-          class="md:border md:border-solid md:border-red-500 md:flex sm:hidden max-[640px]:hidden"
+          class="md:border md:border-solid md:border-red-500 md:w-[calc(0.5*100vw)] md:h-[42.4px] md:flex sm:hidden max-[640px]:hidden"
         >
           <input
-            class="border border-solid border-[#d9d9d9] outline-none h-[42.4px] md:w-[calc(0.5*100vw)]"
+            class="border border-solid border-[#d9d9d9] h-[42.4px] w-[calc(0.5*100vw)] outline-none"
             placeholder="Search without being tracked"
           />
 
@@ -102,11 +102,12 @@
         </div>
       </header>
 
+      <!-- The search bar is below for all view port widths that are less than 	768px -->
       <div
-        class="max-[768px]:border max-[768px]:border-solid max-[768px]:border-red-500 max-[768px]:w-full max-[768px]:flex max-[768px]:mt-2 md:hidden"
+        class="border border-solid border-red-500 w-full h-[42.4px] flex mt-2 md:hidden"
       >
         <input
-          class="border border-solid border-[#d9d9d9] outline-none h-[42.4px] w-full"
+          class="border border-solid border-[#d9d9d9] h-[42.4px] w-full outline-none"
           placeholder="Search without being tracked"
         />
 
