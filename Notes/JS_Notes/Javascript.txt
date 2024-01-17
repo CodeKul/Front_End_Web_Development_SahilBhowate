@@ -1,3 +1,89 @@
 Javascript Level 1
+What is javascript ?
+
+How to include javascript in html file.
+
+Data types in javascript.-- [including how to make objects]
+
+operators in javascript.
+
+operator associativity rules in javascript
+
+Scope of var , let const variables --- difference between these three kinds of declarations
+
+Statements that control the flow of the program.
+
+Appying various Looping statements in javascript for executing statements in repeating manner
+
+Using break and continue statements in javascript looping statements.
+
+Applying loop on the array , strings , array of objects
+
+How to write a function using function keyword. --- return statement of the function.
+
+Built in methods for strings
+
+Built in methods for objects
+
+Built in methods for arrays
+
+try catch block for error handling through interactive js dialog box
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 Javascript Level 2
+Function notations in javascript.
+
+Higher Order functions
+
+this keyword. Difference between the value of this keyword in various function notations.
+
+Callback functions introduction using setTimeout , setInterval() function. --- demonstration of asynchronous behaviour
+
+Difference between higher order functions and callback functions
+
+HTML template literals
+
+DOM manipulation functions which are callback functions.
+
+Pseudo experience of api call using the callback function ; loading spinner , template literals and DOM manipulation
+
+What is callback hell ?
+
+Promise objects in javascript
+
+Async await statements in javascript
+
+Demonstration of HTTP methods using JSON server and promises , async / await.
+
+Calling api using async / await , promises
+
+spread operator and rest parameter by comparing them with looping statements.
+
+Hoisting by comparing javascript with c programming language
+
+TDZ --- Temporal dead zone
+
+Using the browser's debugging tool.
+
+Event Loop
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Javascript Level 3
+Prototype based oop in javascript
+
+class keyword based oop in javascript
+
+Dates in javascript
+
+Regular Expressions
+
+call() , apply() and bind() methods in javascript
+
+closures --- How function closures imitate object oriented programming
+
+BOM --- [Browser object model]
+
+sessionStorage , localStorage using javascript
+
