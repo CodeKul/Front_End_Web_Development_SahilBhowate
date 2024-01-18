@@ -1,0 +1,75 @@
+------ Javascript Level 1 ------
+
+What are the data types allowed in javascript ?
+
+Type	     typeof return value	
+-----------------------------------
+Null	        "object"	            
+Undefined	    "undefined"	      
+Boolean	        "boolean"	
+Number	        "number"	
+BigInt	        "bigint"	
+String	        "string"	
+Symbol	        "symbol"
+
+JavaScript integers are only accurate up to 15 digits:
+
+In JavaScript, all numbers are stored in a 64-bit floating-point format (IEEE 754 standard).
+With this standard, large integer cannot be exactly represented and will be rounded.
+Because of this, JavaScript can only safely represent integers:
+
+Up to 9007199254740991 +(253-1)
+
+and
+
+Down to -9007199254740991 -(253-1).
+
+Integer values outside this range lose precision.
+
+How to Create a BigInt
+To create a BigInt, append n to the end of an integer or call BigInt():
+
+Example :--- let x = 1234567890123456789012345n;
+             let y = BigInt(1234567890123456789012345)
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Operator	Description
++	        Addition
+-	        Subtraction
+*	        Multiplication
+**	        Exponentiation (ES2016)
+/	        Division
+%	        Modulus (Division Remainder)
+++	        Increment
+--	        Decrement
+
+JavaScript       Comparison Operators
+Operator	        Description
+==	                equal to
+===	                equal value and equal type
+!=	                not equal
+!==	                not equal value or not equal type
+>	                greater than
+<	                less than
+>=	                greater than or equal to
+<=	                less than or equal to
+?	                ternary operator
+
+Bitwise Operators 
+&& AND
+|| Bitwise OR
+!  Bitwise NOT
+
+Assignment operator
+=
+
+Combination of Operators with assignment operator
++=  means add and assign
+-=  means subtract and assign
+*=  means multiply and assign
+/=  means divide and assign
+
+Table of operator precedence
+https://docs.google.com/spreadsheets/d/1pQV4LyMkAwLnEg5Bmb5AR89RblXvbaJO/edit?usp=sharing&ouid=101003154699401090673&rtpof=true&sd=true
+In this table there is a ranking. The operator with arithmatically less rank has the higher precedence.

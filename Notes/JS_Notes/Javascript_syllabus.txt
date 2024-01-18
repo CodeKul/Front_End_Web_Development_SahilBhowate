@@ -7,7 +7,7 @@ Data types in javascript.-- [including how to make objects]
 
 operators in javascript.
 
-operator associativity rules in javascript
+operator precedence rules in javascript
 
 Scope of var , let const variables --- difference between these three kinds of declarations
 
