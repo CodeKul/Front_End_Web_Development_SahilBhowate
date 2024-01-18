@@ -11,7 +11,13 @@ operator associativity rules in javascript
 
 Scope of var , let const variables --- difference between these three kinds of declarations
 
+Deep copy and shallow copy
+
+Frreze method for making variables immutable
+
 Statements that control the flow of the program.
+
+Truthy and falsy values
 
 Appying various Looping statements in javascript for executing statements in repeating manner
 
@@ -74,6 +80,12 @@ Javascript Level 3
 Prototype based oop in javascript
 
 class keyword based oop in javascript
+
+Strict mode in javascript
+
+import and export statements
+
+Throttling
 
 Dates in javascript
 
