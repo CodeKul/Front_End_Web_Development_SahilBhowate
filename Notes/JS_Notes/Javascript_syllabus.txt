@@ -81,6 +81,10 @@ Prototype based oop in javascript
 
 class keyword based oop in javascript
 
+Set , Map , symbol data structure in javascript.
+
+call() , apply() and bind() methods in javascript
+
 Strict mode in javascript
 
 import and export statements
@@ -91,7 +95,7 @@ Dates in javascript
 
 Regular Expressions
 
-call() , apply() and bind() methods in javascript
+How to use Set and Map data structure in javascript ?
 
 closures --- How function closures imitate object oriented programming
 

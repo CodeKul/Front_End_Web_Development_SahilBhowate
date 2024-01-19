@@ -66,6 +66,17 @@ Assignment operator
 
 Combination of Operators with assignment operator
 +=  means add and assign
+let a = 2;
+let b = 'hello';
+
+console.log((a += 3)); // Addition
+// Expected output: 5
+
+console.log((b += ' world')); // Concatenation
+// Expected output: "hello world"
+
+
+
 -=  means subtract and assign
 *=  means multiply and assign
 /=  means divide and assign
