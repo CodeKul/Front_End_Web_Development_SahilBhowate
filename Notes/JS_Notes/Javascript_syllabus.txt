@@ -83,6 +83,8 @@ class keyword based oop in javascript
 
 Set , Map , symbol data structure in javascript.
 
+How to use Set and Map data structure in javascript ?
+
 call() , apply() and bind() methods in javascript
 
 Strict mode in javascript
@@ -94,8 +96,6 @@ Throttling
 Dates in javascript
 
 Regular Expressions
-
-How to use Set and Map data structure in javascript ?
 
 closures --- How function closures imitate object oriented programming
 
