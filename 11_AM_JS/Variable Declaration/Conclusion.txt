@@ -1,0 +1,15 @@
+variables declared using var keyword do not have block scope. They are accessible outside the block also.
+
+variables declared using let keyword have block scope
+
+variables declared using const keyword have block scope
+
+variables declared using var keyword have function scope.
+
+variables declared using let keyword have function scope.
+
+variables declared using const keyword have function scope.
+
+variables declared using var , let keyword could be modified.
+
+variables declared using const keyword could not be modified.
