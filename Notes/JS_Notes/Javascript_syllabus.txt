@@ -13,7 +13,7 @@ Scope of var , let const variables --- difference between these three kinds of d
 
 Deep copy and shallow copy
 
-Frreze method for making variables immutable
+Frreze method for making objects immutable
 
 Statements that control the flow of the program.
 
