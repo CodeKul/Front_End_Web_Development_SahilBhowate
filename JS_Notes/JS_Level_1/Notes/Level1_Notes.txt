@@ -1,5 +1,8 @@
 ------ Javascript Level 1 ------
 
+What is javascript ?
+JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+
 What are the data types allowed in javascript ?
 
 Type	     typeof return value	
