@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Changing CSS Using JS</title>
+
+    <style>
+        .squareOneStyle {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .squareTwoStyle {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="makeSquareOneRed()">Make squareOne Red</button>
+
+    <button onclick="makeSquareTwoRed()">Make squareTwo Red</button>
+
+    <div style="display:flex; gap:8px">
+        <div id="squareOne" class="squareOneStyle">
+        </div>
+
+        <div id="squareTwo" class="squareTwoStyle"></div>
+    </div>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./script2.js"></script>
+    <!-- <script src="./script3.js"></script> -->
+</body>
+
+</html>
