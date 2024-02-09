@@ -74,6 +74,8 @@ Using the browser's debugging tool.
 
 Event Loop
 
+Map , Reduce , Filter functions for arrays in javascript.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 Javascript Level 3
