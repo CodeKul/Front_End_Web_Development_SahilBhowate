@@ -57,14 +57,14 @@ function prepareDosaSambhar() {
     startCountdownForDosaPreparation();
     orderExecutionArray.push(dishObj);
     displayOrderExecutionString();
+
+    let DishName = "Dosa Sambhar";
+    let CookingTime = 10000;
+
+    setTimeout(function () {
+      removeTheReadyDishFromOrderExecutionArray(DishName);
+    }, CookingTime);
   }
-
-  let DishName = "Dosa Sambhar";
-  let CookingTime = 10000;
-
-  setTimeout(function () {
-    removeTheReadyDishFromOrderExecutionArray(DishName);
-  }, CookingTime);
 }
 
 function preparePizza() {
@@ -72,16 +72,17 @@ function preparePizza() {
   dishObj.dishName = "Pizza";
 
   if (orderExecutionArray.length < 4) {
+    startCountDownForPizzaPreparation();
     orderExecutionArray.push(dishObj);
     displayOrderExecutionString();
+
+    let DishName = "Pizza";
+    let CookingTime = 20000;
+
+    setTimeout(function () {
+      removeTheReadyDishFromOrderExecutionArray(DishName);
+    }, CookingTime);
   }
-
-  let DishName = "Pizza";
-  let CookingTime = 20000;
-
-  setTimeout(function () {
-    removeTheReadyDishFromOrderExecutionArray(DishName);
-  }, CookingTime);
 }
 
 function prepareChickenRoll() {
@@ -89,16 +90,17 @@ function prepareChickenRoll() {
   dishObj.dishName = "Chicken Roll";
 
   if (orderExecutionArray.length < 4) {
+    startCountdownForChickenRollPreparation();
     orderExecutionArray.push(dishObj);
     displayOrderExecutionString();
+
+    let DishName = "Chicken Roll";
+    let CookingTime = 40000;
+
+    setTimeout(function () {
+      removeTheReadyDishFromOrderExecutionArray(DishName);
+    }, CookingTime);
   }
-
-  let DishName = "Chicken Roll";
-  let CookingTime = 40000;
-
-  setTimeout(function () {
-    removeTheReadyDishFromOrderExecutionArray(DishName);
-  }, CookingTime);
 }
 
 function prepareIdliSambhar() {
@@ -106,16 +108,17 @@ function prepareIdliSambhar() {
   dishObj.dishName = "Idli Sambhar";
 
   if (orderExecutionArray.length < 4) {
+    startCountdownForIdliSambharPreparation();
     orderExecutionArray.push(dishObj);
     displayOrderExecutionString();
+
+    let DishName = "Idli Sambhar";
+    let CookingTime = 30000;
+
+    setTimeout(function () {
+      removeTheReadyDishFromOrderExecutionArray(DishName);
+    }, CookingTime);
   }
-
-  let DishName = "Idli Sambhar";
-  let CookingTime = 30000;
-
-  setTimeout(function () {
-    removeTheReadyDishFromOrderExecutionArray(DishName);
-  }, CookingTime);
 }
 
 function startCountdownForDosaPreparation() {
@@ -139,17 +142,37 @@ function startCountDownForPizzaPreparation() {
     count = count + 1;
     pizzaClockTag.innerHTML = `<span>${count}</span>`;
 
-    if (count === 20) {
-      clearInterval(pizzaInterval);
+    if (count > 20) {
       pizzaClockTag.innerHTML = ``;
+      clearInterval(pizzaInterval);
     }
   }, 1000);
 }
 
-// function startCountdownForChickenRollPreparation(){
+function startCountdownForChickenRollPreparation() {
+  let chickenRollClockTag = document.getElementById("chickenRollClock");
+  let count = 0;
+  let chickenRollInterval = setInterval(function () {
+    count = count + 1;
+    chickenRollClockTag.innerHTML = `<span>${count}</span>`;
 
-// }
+    if (count > 40) {
+      chickenRollClockTag.innerHTML = ``;
+      clearInterval(chickenRollInterval);
+    }
+  }, 1000);
+}
 
-// function startCountdownForIdliSambharPreparation(){
+function startCountdownForIdliSambharPreparation() {
+  let idliSambharClockTag = document.getElementById("idliSambharClock");
+  let count = 0;
+  let idliSambharInterval = setInterval(function () {
+    count = count + 1;
+    idliSambharClockTag.innerHTML = `<span>${count}</span>`;
 
-// }
+    if (count > 40) {
+      idliSambharClockTag.innerHTML = ``;
+      clearInterval(idliSambharInterval);
+    }
+  }, 1000);
+}
