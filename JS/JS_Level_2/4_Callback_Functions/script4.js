@@ -1,13 +1,10 @@
-let count = 0;
+function getDataFromBackend() {
+  console.log("The button has been clicked.");
+  //assume that the time required by the data to reach browser is 6000 milliseconds
 
-let sportsTimer = setInterval(runnerTimer, 1000);
+  setTimeout(displayDataOnUI, 6000);
+}
 
-function runnerTimer() {
-  count = count + 1;
-
-  console.log(`The time in seconds in ${count}`);
-
-  if (count === 10) {
-    clearInterval(sportsTimer);
-  }
+function displayDataOnUI() {
+  console.log("The displayDataOnUI has been executed.");
 }

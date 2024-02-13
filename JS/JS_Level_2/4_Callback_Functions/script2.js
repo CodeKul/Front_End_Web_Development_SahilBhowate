@@ -1,8 +1,8 @@
-setTimeout(startOperatingSystem, 5000);
+let count = 0;
 
-function startOperatingSystem() {
-  console.log("The operating system has been started");
+setInterval(runnerTimer, 1000);
+
+function runnerTimer() {
+  count = count + 1;
+  console.log(`The time in seconds is ${count}`);
 }
-
-console.log("Preparing Devices...");
-console.log("Loading Device Drivers...");

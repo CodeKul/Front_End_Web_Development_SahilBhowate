@@ -1,8 +1,13 @@
 let count = 0;
 
-setInterval(runnerTimer, 1000);
+let sportsTimer = setInterval(runnerTimer, 1000);
 
 function runnerTimer() {
   count = count + 1;
-  console.log(`The time in seconds is ${count}`);
+
+  console.log(`The time in seconds in ${count}`);
+
+  if (count === 10) {
+    clearInterval(sportsTimer);
+  }
 }

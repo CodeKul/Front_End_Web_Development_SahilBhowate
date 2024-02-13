@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Callback functions</title>
+
+    <style>
+      #foodOrderMenu {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+      }
+
+      button {
+        background-color: tomato;
+      }
+
+      #orderExecutionQueue {
+        height: 52px;
+        width: 100%;
+        background-color: lightgreen;
+        display: flex;
+        gap: 8px;
+      }
+
+      #orderReadyQueue {
+        height: 52px;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        gap: 8px;
+      }
+
+      #foodOrderMenuAndClock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+      }
+
+      .executionQueueItem {
+        background-color: gray;
+      }
+
+      table,
+      th,
+      td,
+      thead {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div><h1>Asynchronous Execution</h1></div>
+
+    <div>
+      <h1>Food Order</h1>
+
+      <div id="foodOrderMenuAndClock">
+        <div id="foodOrderMenu">
+          <div>
+            <button onclick="prepareDosaSambhar()">Dosa Sambhar</button>
+          </div>
+          <div>--- 10 Seconds</div>
+          <div><button onclick="preparePizza()">Pizza</button></div>
+          <div>--- 20 Seconds</div>
+          <div>
+            <button onclick="prepareChickenRoll()">Chicken Roll</button>
+          </div>
+          <div>--- 40 Seconds</div>
+          <div>
+            <button onclick="prepareIdliSambhar()">Idli Sambhar</button>
+          </div>
+          <div>--- 30 Seconds</div>
+        </div>
+
+        <div>
+          <table>
+            <thead>
+              <th>Dish Name</th>
+              <th>CountDown Timer</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Dosa Sambhar</td>
+                <td id="dosaSambharClock" style="text-align: center"></td>
+              </tr>
+
+              <tr>
+                <td>Pizza</td>
+                <td id="pizzaClock" style="text-align: center"></td>
+              </tr>
+
+              <tr>
+                <td>Chicken Roll</td>
+                <td id="chickenRollClock" style="text-align: center"></td>
+              </tr>
+
+              <tr>
+                <td>Idli Sambhar</td>
+                <td id="idliSambharClock" style="text-align: center"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h1>Order Execution Queue</h1>
+
+      <div id="orderExecutionQueue">
+        <div class="executionQueueItem"><span>Chef 1</span></div>
+        <div class="executionQueueItem"><span>Chef 2</span></div>
+        <div class="executionQueueItem"><span>Chef 3</span></div>
+        <div class="executionQueueItem"><span>Chef 4</span></div>
+      </div>
+
+      <h1>Order Ready Queue</h1>
+
+      <div id="orderReadyQueue"></div>
+    </div>
+
+    <script src="./script7.js"></script>
+  </body>
+</html>

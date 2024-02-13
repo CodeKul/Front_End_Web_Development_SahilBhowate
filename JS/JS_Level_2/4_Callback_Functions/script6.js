@@ -1,23 +1,12 @@
-let count = 0;
+//Write a JavaScript function that takes a callback and invokes it after a delay of 2 second.
 
-let startTimerTag = document.getElementById("startTimerTag");
-let endTimerTag = document.getElementById("endTimerTag");
-
-let sportsTimer = null;
-
-function startTimer() {
-  sportsTimer = setInterval(runnerTime, 1000);
+function simpleHigherOrder(receivedCallback) {
+  // receivedCallback();
+  setTimeout(receivedCallback, 5000);
 }
 
-function runnerTime() {
-  count = count + 1;
-  startTimerTag.innerHTML = `${count} s`;
+function simpleCallback() {
+  console.log("This was executed after a delay of 5 seconds.");
 }
 
-function endTimer() {
-  endTimerTag.innerHTML = `${count} s`;
-
-  if (sportsTimer !== null) {
-    clearInterval(sportsTimer);
-  }
-}
+simpleHigherOrder(simpleCallback); //function call

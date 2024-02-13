@@ -1,10 +1,23 @@
-function getDataFromBackend() {
-  console.log("The button has been clicked.");
-  //assume that the time required by the data to reach browser is 6000 milliseconds
+let count = 0;
 
-  setTimeout(displayDataOnUI, 6000);
+let startTimerTag = document.getElementById("startTimerTag");
+let endTimerTag = document.getElementById("endTimerTag");
+
+let sportsTimer = null;
+
+function startTimer() {
+  sportsTimer = setInterval(runnerTime, 1000);
 }
 
-function displayDataOnUI() {
-  console.log("The displayDataOnUI has been executed.");
+function runnerTime() {
+  count = count + 1;
+  startTimerTag.innerHTML = `${count} s`;
+}
+
+function endTimer() {
+  endTimerTag.innerHTML = `${count} s`;
+
+  if (sportsTimer !== null) {
+    clearInterval(sportsTimer);
+  }
 }
