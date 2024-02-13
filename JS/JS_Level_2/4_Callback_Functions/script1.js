@@ -170,7 +170,7 @@ function startCountdownForIdliSambharPreparation() {
     count = count + 1;
     idliSambharClockTag.innerHTML = `<span>${count}</span>`;
 
-    if (count > 40) {
+    if (count > 30) {
       idliSambharClockTag.innerHTML = ``;
       clearInterval(idliSambharInterval);
     }
