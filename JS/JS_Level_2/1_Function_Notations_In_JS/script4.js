@@ -4,3 +4,5 @@
 let getData = () => {
   console.log("The name is Tushar");
 };
+
+getData(); //calling the function

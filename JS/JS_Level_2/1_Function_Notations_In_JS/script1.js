@@ -6,4 +6,4 @@ let getInfo = function getDataOne() {
 //function call
 getInfo();
 
-
+// getDataOne();

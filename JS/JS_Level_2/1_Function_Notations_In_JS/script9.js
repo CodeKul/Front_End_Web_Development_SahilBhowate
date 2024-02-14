@@ -1,3 +1,4 @@
+//default values have been assigned to the getData function's parameter
 const getData = (studentName = "Jack", age = 22) => {
   console.log("The value of student name and age is ", studentName, age);
 };

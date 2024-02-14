@@ -11,3 +11,9 @@
 })(1, 2, 3);
 
 // console.log("The value of sum is ", sum);
+
+// (
+  // function(){
+    //function body
+  // }
+// )(); //IIFE
