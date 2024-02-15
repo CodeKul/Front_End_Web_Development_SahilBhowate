@@ -1,0 +1,60 @@
+Below reference are for async await
+
+How Asynchronous JavaScript Works
+https://www.freecodecamp.org/news/asynchronous-javascript/
+
+How to rewrite a callback function in Promise form and async/await form in JavaScript
+https://www.coreycleary.me/how-to-rewrite-a-callback-function-in-promise-form-and-async-await-form-in-javascript/
+
+async function
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+
+Async Function in JavaScript
+https://www.scaler.com/topics/nodejs/async-function-in-javascript/
+
+How to Use Async/Await in JavaScript – Explained with Code Examples
+https://www.freecodecamp.org/news/javascript-async-await/
+
+JavaScript Async/Await Tutorial – Learn Callbacks, Promises, and Async/Await in JS by Making Ice Cream
+https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Below references are for promise objects
+
+Promise
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+Using Promises
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+
+Promise
+https://javascript.info/promise-basics
+
+JavaScript Promises: then(f,f) vs then(f).catch(f)
+https://dmitripavlutin.com/javascript-promises-then-vs-then-catch/
+
+Using .then(), .catch(), .finally() to Handle Errors in Javascript Promises
+https://lucymarmitchell.medium.com/using-then-catch-finally-to-handle-errors-in-javascript-promises-6de92bce3afc
+
+Promise Error Handling
+https://www.javascripttutorial.net/es6/promise-error-handling/
+
+JavaScript Promise catch() Method
+https://www.geeksforgeeks.org/javascript-promise-catch-method/
+
+Guide to promises in Node.js
+https://blog.logrocket.com/guide-promises-node-js/
+
+Does a JavaScript Promise start executing when the first then() call is registered on the promise instance?
+https://www.quora.com/Does-a-JavaScript-Promise-start-executing-when-the-first-then-call-is-registered-on-the-promise-instance
+
+Promise
+https://javascript.info/promise-basics#:~:text=The%20constructor%20syntax%20for%20a,created%2C%20the%20executor%20runs%20automatically.
+
+Javascript Promise Methods with polyfill example: A Cheat Sheet for Developer
+https://dev.to/devsmitra/javascript-promise-methods-with-polyfill-example-a-cheat-sheet-for-developer-2h0e
+
+Javascript: No More callbacks use promisify to convert callback to promise
+https://dev.to/devsmitra/javascript-no-more-callbacks-use-promisify-to-convert-callback-to-promise-3pg#:~:text=js%20already%20provides%20a%20utility,resolve(result)%3B%20%7D%20%7D)%3B%20%7D)%3B

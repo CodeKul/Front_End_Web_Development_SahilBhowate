@@ -11,11 +11,13 @@ function makeIceCream(currentCreamQuantity, currentConeQuantity) {
   console.log("The iceCreamConeIngrdients object is ", iceCreamConeIngrdients);
 
   let promiseObj = new Promise(function (resolve, reject) {
-    if (currentCreamQuantity > 0 && currentConeQuantity > 0) {
-      resolve("The ice-cream is ready");
-    } else if (currentCreamQuantity <= 0 && currentConeQuantity <= 0) {
-      reject(new Error("The ingreditents are finished."));
-    }
+    setTimeout(function () {
+      if (currentCreamQuantity > 0 && currentConeQuantity > 0) {
+        resolve("The ice-cream is ready");
+      } else if (currentCreamQuantity <= 0 && currentConeQuantity <= 0) {
+        reject(new Error("The ingreditents are finished."));
+      }
+    }, 4000);
   });
 
   console.log("The promiseObj is ", promiseObj);
@@ -24,8 +26,6 @@ function makeIceCream(currentCreamQuantity, currentConeQuantity) {
 }
 
 function orderIceCreamCone() {
-  console.log("The order for ice cream cone has been recieved");
-
   iceCreamConeIngrdients.cream = iceCreamConeIngrdients.cream - 1;
 
   iceCreamConeIngrdients.cone = iceCreamConeIngrdients.cone - 1;
@@ -38,6 +38,8 @@ function orderIceCreamCone() {
     currentCreamQuantity,
     currentConeQuantity
   );
+
+  console.log("Wait till the ice-cream is being prepared...");
 
   //https://dmitripavlutin.com/javascript-promises-then-vs-then-catch/
   //or you can use then block and catch block
