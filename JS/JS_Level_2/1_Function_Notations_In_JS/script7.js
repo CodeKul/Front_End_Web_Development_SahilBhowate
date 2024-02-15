@@ -1,4 +1,4 @@
-//If you have one (and just one) parameter, you could omit the parentheses completely
+//If you have one (and just one) parameter, you could omit the round parentheses made for representing the parameters before the arrow symbol.
 
 let rollNo = 21;
 

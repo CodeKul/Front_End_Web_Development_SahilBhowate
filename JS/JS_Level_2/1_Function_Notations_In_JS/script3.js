@@ -11,3 +11,4 @@ getData();
 setTimeout(function () {
   console.log("This is the body of anonymous function.");
 }, 5000);
+
