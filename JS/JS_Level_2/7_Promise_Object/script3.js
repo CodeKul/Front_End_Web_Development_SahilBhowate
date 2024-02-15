@@ -7,14 +7,10 @@ let iceCreamConeIngrdients = {
 };
 
 //asynchronous operation to make the ice-cream
-function makeIceCream() {
+function makeIceCream(currentCreamQuantity, currentConeQuantity) {
   console.log("The iceCreamConeIngrdients object is ", iceCreamConeIngrdients);
 
   let promiseObj = new Promise(function (resolve, reject) {
-    let currentCreamQuantity = iceCreamConeIngrdients.cream;
-
-    let currentConeQuantity = iceCreamConeIngrdients.cone;
-
     if (currentCreamQuantity > 0 && currentConeQuantity > 0) {
       resolve("The ice-cream is ready");
     } else if (currentCreamQuantity <= 0 && currentConeQuantity <= 0) {
@@ -34,7 +30,14 @@ function orderIceCreamCone() {
 
   iceCreamConeIngrdients.cone = iceCreamConeIngrdients.cone - 1;
 
-  let iceCreamPromiseObject = makeIceCream();
+  let currentCreamQuantity = iceCreamConeIngrdients.cream;
+
+  let currentConeQuantity = iceCreamConeIngrdients.cone;
+
+  let iceCreamPromiseObject = makeIceCream(
+    currentCreamQuantity,
+    currentConeQuantity
+  );
 
   //https://dmitripavlutin.com/javascript-promises-then-vs-then-catch/
   //or you can use then block and catch block
