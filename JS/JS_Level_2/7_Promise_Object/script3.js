@@ -8,6 +8,8 @@ let iceCreamConeIngrdients = {
 
 //asynchronous operation to make the ice-cream
 function makeIceCream() {
+  console.log("The iceCreamConeIngrdients object is ", iceCreamConeIngrdients);
+
   let promiseObj = new Promise(function (resolve, reject) {
     let currentCreamQuantity = iceCreamConeIngrdients.cream;
 
@@ -27,6 +29,10 @@ function makeIceCream() {
 
 function orderIceCreamCone() {
   console.log("The order for ice cream cone has been recieved");
+
+  iceCreamConeIngrdients.cream = iceCreamConeIngrdients.cream - 1;
+
+  iceCreamConeIngrdients.cone = iceCreamConeIngrdients.cone - 1;
 
   let iceCreamPromiseObject = makeIceCream();
 
