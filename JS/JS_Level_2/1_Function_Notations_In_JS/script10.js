@@ -10,10 +10,19 @@
   console.log("The value of sum is ", sum);
 })(1, 2, 3);
 
+//IIFE to greet people
+(() => {
+  console.log("Good Morning Everyone !!");
+})();
+
 // console.log("The value of sum is ", sum);
 
 // (
-  // function(){
-    //function body
-  // }
+// function(){
+//function body
+// }
 // )(); //IIFE
+
+// (
+//anonymous function body
+// )(function arguments);

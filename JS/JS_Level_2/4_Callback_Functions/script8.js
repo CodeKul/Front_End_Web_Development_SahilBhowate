@@ -5,8 +5,6 @@ const backendData = [
   { RollNo: 4, Name: "Ramesh" },
 ];
 
-let contentAreaTag = document.getElementById("contentArea");
-
 let tableDataTag = document.getElementById("tableData");
 
 let tableDataString = "";
