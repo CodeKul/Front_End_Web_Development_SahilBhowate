@@ -1,0 +1,25 @@
+The principles of Object Oriented Javascript
+
+What are the characteristics of object oriented languages ?
+--- Below are the characteristics of object oriented languages
+Encapsulation 
+Data can be grouped together with functionality that operates on that data. This, quite simply, is the definition of an object.
+
+Aggregation 
+One object can reference another object. 
+
+Inheritance 
+A newly created object has the same characteristics as another object without explicitly duplicating its functionality.
+
+Polymorphism 
+One interface may be implemented by multiple objects.
+
+----- 1 -----
+How to identify and work with the two primary JavaScript data types: primitive types and reference types ?
+
+What are the differences between primitive types and reference types in javascript ?
+
+What are the 5 primitive types in javascript ?
+strings , numbers , boolean , null , undefined
+
+What are the Reference Types in javascript ?

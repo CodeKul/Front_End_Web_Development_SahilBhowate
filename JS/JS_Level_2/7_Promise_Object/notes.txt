@@ -1,0 +1,80 @@
+Understanding Javascript Promises
+
+What is the Promise lifecycle ?
+
+What are the 2 possible states of the Promise object ?
+
+What is a thenable object ?
+
+const promiseObject = fetch("books.json");
+
+//Example 1
+//add a fulfillment and rejection handler
+promiseObject.then(response =>{
+
+//fulfillment
+console.log("fulfillment code);
+
+}, reason =>{
+
+//rejection
+console.error("reason of promise rejection");
+
+});
+
+//Example 2
+//add another fulfillment handler
+promiseObject.then(response => {
+
+//fulfillment
+console.log("fulfillment code");
+
+});
+
+//Example 3
+//add another rejection handler
+promiseObject.then(null, reason => {
+
+//rejection
+console.log("reason for promise rejection");
+
+})
+
+All three then() calls operate on the same promise. 
+The first example assigns both a fulfillment and a rejection handler. 
+The second example only assigns a fulfillment handler; errors won’t be reported. 
+The third example just assigns a rejection handler and doesn’t report success.
+
+Important note about fetch() function
+One quirk of the fetch() function is that the returned promise is fulfilled whenever
+it receives an HTTP status, even 404 or 500. The promise is only rejected when the
+network request fails for some reason. If you want to ensure that the status is in
+the 200-299 range, you can check the response.ok property, as in this example:
+
+const promise = fetch("books.json");
+
+promise.then(dataReady);
+
+function dataReady(response){   
+      if (response.ok) 
+    {
+    console.log("Request succeeded.");
+    } 
+      else 
+    {
+    console.error("Request failed.");
+    }
+}
+
+OR the alternative to above example is 
+
+const promise = fetch("books.json");
+
+promise.then(response => {
+  if (response.ok) {
+   console.log("Request succeeded.");
+  } 
+  else {
+   console.error("Request failed.");
+  }
+});
