@@ -1,8 +1,8 @@
-//step 1
+//step 1 //creating a promise object
 // let promiseObj = new Promise();
 
 //step 2
-//let promiseObj = new Promise(function(){
+// let promiseObj = new Promise(function(){
 
 // });
 
@@ -14,40 +14,25 @@
 //resolve is a function for receiving the message of promise fulfillment
 //reject is a function for receiving the message of promise rejection
 
-//let promiseObj = new Promise(function(resolve,reject){
+// let promiseObj = new Promise(function(resolve,reject){
 
 // });
 
 //step 4
-//let promiseObj = new Promise(function(resolve,reject){
+// let promiseObj = new Promise(function (resolve, reject) {
+//   let x = 9;
 
-// let x = 9;
-
-// if (x > 9) {
-//   resolve("Good x is greater than 9");
-// } else if (x <= 9) {
-//   reject("Okay x is less than or equal to 9");
-// }
-
+//   if (x > 9) {
+//     resolve("Good x is greater than 9");
+//   } else if (x <= 9) {
+//     reject("Okay x is less than or equal to 9");
+//   }
 // });
 
 //step 5
-// function CheckThePromise() {
-//   let promiseObj = new Promise(function (resolve, reject) {
-//     let x = 9;
-
-//     if (x > 9) {
-//       resolve("Good x is greater than 9");
-//     } else if (x <= 9) {
-//       reject("Okay x is less than or equal to 9");
-//     }
-//   });
-// }
-
-//step 6 promise settlement
 function CheckThePromise() {
   let promiseObj = new Promise(function (resolve, reject) {
-    let x = 11;
+    let x = 9;
 
     if (x > 9) {
       resolve("Good x is greater than 9");
@@ -55,9 +40,41 @@ function CheckThePromise() {
       reject("Okay x is less than or equal to 9");
     }
   });
+}
 
-  //promise settlement
-  promiseObj.then(promisefullFilled, promiseRejected);
+//step 6 promise settlement
+// function CheckThePromise() {
+//   let promiseObj = new Promise(function (resolve, reject) {
+//     let x = 8;
+
+//     if (x > 9) {
+//       resolve("Good x is greater than 9");
+//     } else if (x <= 9) {
+//       reject("Okay x is less than or equal to 9");
+//     }
+//   });
+
+//   //promise settlement
+//   promiseObj.then(promisefullFilled, promiseRejected);
+// }
+
+//step 7
+function CheckThePromise() {
+  let promiseObj = new Promise(function (resolve, reject) {
+    let x = 8;
+
+    if (x > 9) {
+      resolve("Good x is greater than 9");
+    } else if (x <= 9) {
+      reject(new Error("Okay x is less than or equal to 9"));
+    }
+  });
+
+  //promise settlement--promise fullfillment
+  promiseObj.then(promisefullFilled);
+
+  //promise rejection
+  promiseObj.catch(promiseRejected);
 }
 
 //promise object settlement
