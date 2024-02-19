@@ -2,8 +2,8 @@
 // A Promise is an object representing the eventual completion or failure of an asynchronous operation. Since most people are consumers of already-created promises, this guide will explain consumption of returned promises before explaining how to create them.
 
 let iceCreamConeIngrdients = {
-  cream: 5,
-  cone: 5,
+  cream: 0,
+  cone: 0,
 };
 
 //asynchronous operation to make the ice-cream
@@ -25,6 +25,7 @@ function makeIceCream() {
   return promiseObj;
 }
 
+//event listener function
 function orderIceCreamCone() {
   console.log("The order for ice cream cone has been recieved");
 

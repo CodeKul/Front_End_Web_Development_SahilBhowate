@@ -43,20 +43,20 @@ function CheckThePromise() {
 }
 
 //step 6 promise settlement
-// function CheckThePromise() {
-//   let promiseObj = new Promise(function (resolve, reject) {
-//     let x = 8;
+function CheckThePromise() {
+  let promiseObj = new Promise(function (resolve, reject) {
+    let x = 8;
 
-//     if (x > 9) {
-//       resolve("Good x is greater than 9");
-//     } else if (x <= 9) {
-//       reject("Okay x is less than or equal to 9");
-//     }
-//   });
+    if (x > 9) {
+      resolve("Good x is greater than 9");
+    } else if (x <= 9) {
+      reject("Okay x is less than or equal to 9");
+    }
+  });
 
-//   //promise settlement
-//   promiseObj.then(promisefullFilled, promiseRejected);
-// }
+  //promise settlement
+  // promiseObj.then(promisefullFilled, promiseRejected);
+}
 
 //step 7
 function CheckThePromise() {
