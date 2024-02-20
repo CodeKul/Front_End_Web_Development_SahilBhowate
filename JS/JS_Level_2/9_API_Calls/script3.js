@@ -1,5 +1,6 @@
 let contentAreaTag = document.getElementById("contentArea");
-console.log("The contentAreaTag is ",contentAreaTag);
+
+let apiResponseMessageTag = document.getElementById("apiResponseMessage");
 
 function getUserData() {
   startShowingSpinner();
@@ -21,10 +22,11 @@ function getUserData() {
     })
     .catch((errorObject) => {
       console.log("The errorObject is ", errorObject);
+
+      stopShowingSpinner();
     })
     .finally(() => {
-        console.log("You entered finally block");
-      stopShowingSpinner();
+      console.log("This block of code executes after the promise settlement.");
     });
 }
 
@@ -49,19 +51,22 @@ function displayIncomingData(data) {
       </div>
      </div>`;
 
-  console.log("The requiredTemplateLiteral is ", requiredTemplateLiteral);
+  stopShowingSpinner();
 
   contentAreaTag.innerHTML = requiredTemplateLiteral;
 }
 
 function startShowingSpinner() {
-  contentAreaTag.innerHTML = `<div style="display:flex;justify-content: center;align-items: center;">
-  <div class="spinner-border text-primary" role="status">
-      <span class="visually-hidden">Loading...</span>
-  </div>
+  contentAreaTag.innerHTML = `<div style="display:flex;width:100vw;height:100vh;border:1px solid black;justify-content: center;align-items: center;">
+  <div>
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>  
   </div>`;
 }
 
 function stopShowingSpinner() {
   contentAreaTag.innerHTML = ``;
+  console.log("The contentArea is empty");
 }

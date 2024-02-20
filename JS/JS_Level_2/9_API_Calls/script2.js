@@ -67,6 +67,13 @@ function displayIncomingData(data) {
 
   stopShowingSpinner();
 
+  console.log("The requiredTemplateLiteral is ", requiredTemplateLiteral);
+
+  console.log(
+    "The requiredTemplateLiteral is ",
+    typeof requiredTemplateLiteral
+  );
+
   contentAreaTag.innerHTML = requiredTemplateLiteral;
 }
 
