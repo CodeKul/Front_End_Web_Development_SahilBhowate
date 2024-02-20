@@ -1,62 +1,83 @@
-let requiredData = null;
+let contentAreaTag = document.getElementById("contentArea");
 
-function fetchInternetData() {
-  startShowingLoadingSpinner();
+function getUserData() {
+  console.log("The button was clicked");
 
-  let url = `https://randomuser.me/api/`;
+  startShowingSpinner();
 
-  //fetch is a built-in method of javascript that returns a promise object
-  let promiseObj1 = fetch(url);
+  let url = "https://randomuser.me/api/";
 
-  console.log("The promiseObj1 is ", promiseObj1);
+  let promiseObj = fetch(url);
 
-  //promise settlement
-  promiseObj1.then(dataIsReady);
+  //settlement of promiseObj
+  promiseObj.then(processData);
 
-  promiseObj1.catch(dataIsNotReady);
+  promiseObj.catch(processError);
 
-  promiseObj1.finally(stopShowingLoadingSpinner);
+  //   console.log("The promiseObj is ", promiseObj);
 }
 
-function dataIsReady(response) {
-  console.log("The response inside dataIsReady function is ", response);
+function processData(dataResponse) {
+  //   console.log("The dataResponse is ", dataResponse);
 
-  //converting string to json format json format means javascript object notation.
-  let promiseObj2 = response.json();
+  let promiseObj2 = dataResponse.json();
 
-  console.log("The promiseObj2 inside dataIsReady function ", promiseObj2);
+  //   console.log("The promiseObj2 is ", promiseObj2);
 
-  //settlement of promiseObj2
-  promiseObj2.then(dataGeneratedInJson, dataNotGeneratedInJSON);
+  promiseObj2.then(dataGeneratedInJson);
+
+  promiseObj2.catch(dataNotGeneratedInJson);
 }
 
-function dataIsNotReady(error) {
-  console.log("The error is ", typeof error);
+function processError(errorResponse) {
+  //   console.log("The errorResponse is ", errorResponse);
+  stopShowingSpinner();
 }
 
-function dataGeneratedInJson(incomingData) {
-  console.log("The incomingData is ", incomingData);
+function dataGeneratedInJson(requiredData) {
+  //   console.log("The requiredData is ", requiredData);
 
-  requiredData = incomingData;
+  displayIncomingData(requiredData);
 }
 
-function dataNotGeneratedInJSON(dataError) {
-  console.log("The dataError is ", dataError);
+function dataNotGeneratedInJson(dataError) {
+  //   console.log("The dataError is ", dataError);
 }
 
-function displayData() {
-  console.log("The requiredData inside displayData function is ", requiredData);
+function displayIncomingData(data) {
+  let resultArr = data.results;
+
+  console.log("The resultArr is ", resultArr);
+
+  let name = `${resultArr[0].name.first} ${resultArr[0].name.last}`;
+
+  let imageUrl = resultArr[0].picture.large;
+
+  console.log("The name and imageUrl is ", name, imageUrl);
+
+  let requiredTemplateLiteral = `
+  <div style="display:flex;width:100vw;height: 100vh;border:1px solid black;justify-content: center;align-items: center;">
+    <div>
+      <img src="${imageUrl}"/>
+      <div>
+        ${name}
+      </div>
+    </div>
+   </div>`;
+
+  stopShowingSpinner();
+
+  contentAreaTag.innerHTML = requiredTemplateLiteral;
 }
 
-function stopShowingLoadingSpinner() {
-  console.log("Stop showing the loading spinner.");
+function startShowingSpinner() {
+  contentAreaTag.innerHTML = `<div style="display:flex;justify-content: center;align-items: center;">
+<div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+</div>`;
 }
 
-function startShowingLoadingSpinner() {
-  console.log("Start showing the loading spinner");
+function stopShowingSpinner() {
+  contentAreaTag.innerHTML = ``;
 }
-
-//Step 1 -- use fetch method to get the promiseObject1
-//Step 2 -- write the code for the settlement of promiseObject1
-//Step 3 -- apply .json() method on the response of settlement of promiseObject1. So that you get another promise object ; lets call it as promiseObject2
-//Step 4 -- write the code for the settlement of promiseObject2 ; and have your required data.

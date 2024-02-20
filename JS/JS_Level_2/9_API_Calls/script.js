@@ -23,7 +23,7 @@ function dataIsReady(response) {
 }
 
 function dataIsNotReady(error) {
-  console.log("The error is ", typeof error);
+  console.log("The error is ", error);
 }
 
 function dataGeneratedInJson(requiredData) {
