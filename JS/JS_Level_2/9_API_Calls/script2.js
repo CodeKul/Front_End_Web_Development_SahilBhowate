@@ -1,5 +1,9 @@
+let requiredData = null;
+
 function fetchInternetData() {
-  let url = "https://jsonplaceholder.typicode.com/posts";
+  startShowingLoadingSpinner();
+
+  let url = `https://randomuser.me/api/`;
 
   //fetch is a built-in method of javascript that returns a promise object
   let promiseObj1 = fetch(url);
@@ -7,7 +11,11 @@ function fetchInternetData() {
   console.log("The promiseObj1 is ", promiseObj1);
 
   //promise settlement
-  promiseObj1.then(dataIsReady, dataIsNotReady);
+  promiseObj1.then(dataIsReady);
+
+  promiseObj1.catch(dataIsNotReady);
+
+  promiseObj1.finally(stopShowingLoadingSpinner);
 }
 
 function dataIsReady(response) {
@@ -26,12 +34,26 @@ function dataIsNotReady(error) {
   console.log("The error is ", typeof error);
 }
 
-function dataGeneratedInJson(requiredData) {
-  console.log("The requiredData is ", requiredData);
+function dataGeneratedInJson(incomingData) {
+  console.log("The incomingData is ", incomingData);
+
+  requiredData = incomingData;
 }
 
 function dataNotGeneratedInJSON(dataError) {
   console.log("The dataError is ", dataError);
+}
+
+function displayData() {
+  console.log("The requiredData inside displayData function is ", requiredData);
+}
+
+function stopShowingLoadingSpinner() {
+  console.log("Stop showing the loading spinner.");
+}
+
+function startShowingLoadingSpinner() {
+  console.log("Start showing the loading spinner");
 }
 
 //Step 1 -- use fetch method to get the promiseObject1
