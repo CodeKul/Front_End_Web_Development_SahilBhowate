@@ -18,5 +18,5 @@ async function displayUserData() {
 
   console.log("The requiredData is ", requiredData);
 
-  //how to diplay data
+  //how to diplay data code would be written below
 }

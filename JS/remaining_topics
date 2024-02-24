@@ -1,0 +1,33 @@
+List of remaining topics
+
+error handling with try catch block
+built in methods for arrays --- the google sheet table of return values
+built in methods for object literals --- the google sheet table of return values
+built in methods for strings --- the google sheet table of return values
+all possible looping statements in js --- the google sheet table of return values
+
+----------------------------------------------------------
+
+oop in js
+spread operator for object literals
+this keyword
+http methods with json server
+hoisting
+temporal dead zone
+browser debugging breakpoint
+event loop
+map , reduce , filter , find method in arrays
+
+----------------------------------------------------------
+
+event bubbling
+set , map , symbol data structure
+call() , apply() , bind() methods
+strict mode
+import and export statement
+throttling
+dates
+regular expressions
+closures
+bom --- browser object model
+session storage and local storage
