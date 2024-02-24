@@ -1,5 +1,7 @@
 List of remaining topics
 
+level -1 
+
 error handling with try catch block
 built in methods for arrays --- the google sheet table of return values
 built in methods for object literals --- the google sheet table of return values
@@ -7,6 +9,8 @@ built in methods for strings --- the google sheet table of return values
 all possible looping statements in js --- the google sheet table of return values
 
 ----------------------------------------------------------
+
+level -2
 
 oop in js
 spread operator for object literals
@@ -20,6 +24,8 @@ map , reduce , filter , find method in arrays
 
 ----------------------------------------------------------
 
+level -3
+
 event bubbling
 set , map , symbol data structure
 call() , apply() , bind() methods
@@ -29,5 +35,48 @@ throttling
 dates
 regular expressions
 closures
+bom --- browser object model
+session storage and local storage
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+11 days schedule
+
+Day 0 
+--- spread operator for object literals , destructuring syntax of ES6 , http methods with json server , event bubbling
+
+Day 1 
+--- hoisting
+temporal dead zone
+browser debugging breakpoint
+event loop
+
+Day 2 
+--- oop in js , this keyword , call() , apply() , bind() methods
+
+Day 3
+--- map , reduce , filter , find method in arrays
+set , map , symbol data structure
+
+Day 4
+--- error handling with try catch block
+built in methods for arrays --- the google sheet table of return values
+built in methods for object literals --- the google sheet table of return values
+built in methods for strings --- the google sheet table of return values
+all possible looping statements in js 
+
+Day 5
+strict mode
+import and export statement
+throttling
+
+Day 6
+dates
+regular expressions
+
+Day 7
+closures
+
+Day 8
 bom --- browser object model
 session storage and local storage
