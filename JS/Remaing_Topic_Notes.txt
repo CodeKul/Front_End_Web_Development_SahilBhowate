@@ -1,0 +1,219 @@
+-------------------------- Day 2 --------------------------
+--- oop in js , this keyword , implementation of linked list , call() , apply() , bind() methods  
+
+The principles of Object Oriented Javascript
+
+What are the characteristics of object oriented languages ?
+--- Below are the characteristics of object oriented languages
+Encapsulation 
+Data can be grouped together with functionality that operates on that data. This, quite simply, is the definition of an object.
+
+Aggregation 
+One object can reference another object. 
+
+Inheritance 
+A newly created object has the same characteristics as another object without explicitly duplicating its functionality.
+
+Polymorphism 
+One interface may be implemented by multiple objects.
+
+----- 1 -----
+How to identify and work with the two primary JavaScript data types: primitive types and reference types ?
+
+What are the differences between primitive types and reference types in javascript ?
+
+What are the 5 primitive types in javascript ?
+strings , numbers , boolean , null , undefined
+
+What are the Reference Types in javascript ?
+
+What are the Reference Values in javascript ?
+
+Note :-- 
+An object is an unordered list of properties consisting of a name (always a string) and a value. When the value of a property is a function, it is called a method. Functions themselves are actually reference values in JavaScript, so there’s little difference between a property that contains an array and one that contains a function except that a function can be executed.
+
+Creating Objects --- How to create and interact with generic objects created with new Object() ?
+
+There are a couple of ways to c ­ reate, or instantiate, objects. The first is to use the new operator with a constructor. (A constructor is simply a function that uses new to create an object—any function can be a constructor.) By convention, constructors in JavaScript begin with a capital letter to distinguish them from nonconstructor functions. For example, this code instantiates a generic object and stores a reference to it in object :
+
+________________________________________________________________________________________________________________________________________
+var object = new Object();
+________________________________________________________________________________________________________________________________________
+
+Reference types do not store the object directly into the variable to which it is assigned, so the object variable in this example doesn’t actually
+contain the object instance. Instead, it holds a pointer (or reference) to the location in memory where the object exists. This is the primary 
+difference between objects and primitive values, as the primitive is stored directly in the variable. When you assign an object to a variable, you’re actually assigning a pointer. That means if you assign one variable to another, each variable gets a copy of the pointer, and both still reference the same object in memory. For example:
+
+________________________________________________________________________________________________________________________________________
+var object1 = new Object();
+var object2 = object1;
+________________________________________________________________________________________________________________________________________
+
+This code first creates an object (with new ) and stores a reference in object1 . Next, object2 is assigned the value of object1 . There is still only
+the one instance of the object that was created on the first line, but both variables now point to that object.
+
+How to dereference the object in javascript ?
+
+What is the importance of dereferencing an object ?
+
+How to add or remove properties inside the javascript object ?
+
+How to instantiate built-in types in javascript ?
+The Object type is just one of a handful of built-in reference types that JavaScript provides. The other built-in types are more 
+specialized in their intended usage and can be instantiated at any time.
+
+Array ---- An ordered list of numerically indexed values
+Date  ---- A date and time
+Error ---- A runtime error (there are also several more specific error subtypes)
+Function ---- A function 
+Object ---- A generic object
+RegExp ---- A regular expression
+
+You can instantiate each built-in reference type using new , as
+shown here:
+var items = new Array();
+var now = new Date();
+var error = new Error("Something bad happened.");
+var func = new Function("console.log('Hi');");
+var object = new Object();
+var re = new RegExp("\\d+");
+
+What are literal forms ? 
+Several built-in reference types have literal forms. A literal is syntax that allows you to define a reference value without explicitly creating an object, using the new operator and the object’s constructor.
+
+What are the examples of object literal syntax ?
+var book = {
+name: "The Principles of Object-Oriented JavaScript",
+year: 2014
+};
+
+var book = {
+"book Name": "The Principles of Object-Oriented JavaScript",
+"year Value": 2014
+};
+
+This example is equivalent to the previous one despite the syntactic differences. Both examples are also logically equivalent to the following:
+var book = new Object();
+book.name = "The Principles of Object-Oriented JavaScript";
+book.year = 2014;
+
+Note : -- Using an object literal doesn’t actually call new Object() . Instead, the JavaScript engine follows the same steps it does when using new Object() without actually calling the constructor. This is true for all reference literals.
+
+You can define an array literal in a similar way by enclosing any number of comma-separated values inside square brackets. 
+For example:
+var colors = [ "red", "blue", "green" ];
+console.log(colors[0]); // "red"
+
+This code is equivalent to the following:
+var colors = new Array("red", "blue", "green")
+console.log(colors[0]); // "red"
+
+What are function literals ?
+Creating functions is much easier and less error prone when you use
+the literal form. For example:
+function reflect(value) {
+  return value;
+}
+
+// is the same as
+var reflect = new Function("value", "return value;");
+This code defines the reflect() function, which returns any value passed to it. Even in the case of this simple function, the literal form is
+easier to write and understand than the constructor form. Further, there is no good way to debug functions that are created in the constructor
+form: These functions aren’t recognized by JavaScript debuggers and therefore act as a black box in your application.
+
+Regular Expression Literals
+How to to define regular expressions without using the RegExp constructor ?
+Regular expression literals look very similar to regular expressions in Perl: The pattern is contained between two slashes, and any additional options are single characters following the second slash. For example:
+ var numbers = /\d+/g;
+ // is the same as
+ var numbers = new RegExp("\\d+", "g");
+
+How to access the property of javascript object ?
+Example 1 : 
+var array = [];
+array.push(12345);
+
+Example 2 :
+var array = [];
+array["push"](12345);
+
+This syntax is very useful when you want to dynamically decide which property to access. For example, here bracket notation allows you to use a
+variable instead of the string literal to specify the property to access.
+var array = [];
+var method = "push";
+array[method](12345);
+
+How to identify reference types ?
+Example :
+var items = [];
+
+var object = {};
+
+function reflect(value) {
+    return value;
+}
+
+console.log(items instanceof Array); // true
+console.log(object instanceof Object); // true
+console.log(reflect instanceof Function); // true
+
+Each reference type is correctly identified by using instanceof
+and the constructor that represents its true type (even though the con-
+structor wasn’t used in creating the variable).
+The instanceof operator can identify inherited types. That means
+every object is actually an instance of Object because every reference type
+inherits from Object .
+To demonstrate, the following listing examines the three references
+previously created with instanceof :
+
+Example :- 
+var items = [];
+var object = {};
+function reflect(value) {
+    return value;
+}
+
+console.log(items instanceof Array); //true
+console.log(items instanceof Object); //true
+console.log(object instanceof Object); //true
+console.log(object instanceof Array); //false
+console.log(reflect instanceof Function); //true
+console.log(reflect instanceof Object); //true
+
+Note : - Each reference type is correctly identified as an instance of Object , from which all reference types inherit.
+
+--------------------------------------- Identifying Arrays ---------------------------------------
+Why does
+variableName instanceof Array  
+doesn't work in some cases ? -- What is the solution to this problem ? 
+--- The solution is to use Array.isArray(variableName);
+
+Primitive Wrapper Types
+
+What are Primitive Wrapper types ?
+Perhaps one of the most confusing parts of JavaScript is the concept of primitive wrapper types. 
+There are three primitive wrapper types ( String , Number , and Boolean ). These special reference types exist to make working with primitive values as easy as working with objects. (It would be very confusing if you had to use a different syntax or switch to a procedural
+style just to get a substring of text.)
+
+var name = "Nicholas";
+var firstChar = name.charAt(0);
+console.log(firstChar); // "N"
+
+This is what happens behind the scenes:
+// what the JavaScript engine does
+var name = "Nicholas";
+var temp = new String(name);
+var firstChar = temp.charAt(0);
+temp = null;
+console.log(firstChar); // "N"
+
+Demonstrate the process called autoboxing in javascript Primitive Wrapper types ?
+
+
+
+
+
+
+
+
+
