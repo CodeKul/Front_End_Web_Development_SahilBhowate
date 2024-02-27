@@ -56,13 +56,4 @@ function updateStudentData() {
   };
 
   let url = `http://localhost:3000/students/${requiredObject}`;
-
-  axios
-    .put(url, requiredObject)
-    .then((response) => {
-      console.log("The reponse is ", response);
-    })
-    .catch((error) => {
-      console.log("The error is ", error);
-    });
 }
