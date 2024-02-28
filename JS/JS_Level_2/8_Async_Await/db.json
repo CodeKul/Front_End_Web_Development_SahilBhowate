@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "first_name": "Rajesh",
+      "last_name": "Kumar",
+      "class": "Class 1"
+    },
+    {
+      "id": "2",
+      "first_name": "Hari",
+      "last_name": "Hara",
+      "class": "Class 2"
+    },
+    {
+      "id": "4",
+      "first_name": "Rohit",
+      "last_name": "Sharma",
+      "class": "Class 5"
+    },
+    {
+      "id": "550b",
+      "first_name": "Rakesh",
+      "last_name": "Verma",
+      "class": "Class 5"
+    }
+  ]
+}
